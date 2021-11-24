@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "carte.h"
+#include "../inc/carte.h"
 
 #define NB_JOUEUR 4
 #define NB_CARTES (4*12+2)

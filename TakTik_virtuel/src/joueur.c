@@ -17,7 +17,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "joueur.h"
+#include "../inc/joueur.h"
 
 #define NB_JOUEUR 4
 /*

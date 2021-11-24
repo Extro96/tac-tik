@@ -9,9 +9,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "plateau.h"
-#include "carte.h"
-#include "joueur.h"
+#include "../inc/plateau.h"
+#include "../inc/carte.h"
+#include "../inc/joueur.h"
 
 #define NB_JOUEUR 4
 #define NB_CARTES (4*12+2)

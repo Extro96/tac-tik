@@ -10,9 +10,9 @@
 
 typedef struct CasePlateau CasePlateau;
 struct CasePlateau{
-	int caseMaison = 0;
-	int caseJeu = 1;
-	int caseCage = 2;
+	int caseMaison;
+	int caseJeu;
+	int caseCage;
 };
 
 int plateauJeu(struct CasePlateau, int plateau);

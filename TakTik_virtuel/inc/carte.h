@@ -26,7 +26,7 @@ typedef enum{
 
 typedef struct{
 	int valeurCarte;
-	enum carte_symbole symboleCarte;
+	carte_symbole symboleCarte;
 }Carte;
 
 void initPioche(Carte paquet[]);
