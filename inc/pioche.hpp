@@ -8,8 +8,8 @@
 #ifndef PIOCHE_HPP_
 #define PIOCHE_HPP_
 
-#include <iostream>
 #include <list>
+#include <string>
 
 #include "../inc/carte.hpp"
 
@@ -26,8 +26,10 @@ public :
 
 	void distribuerCarte();
 
+	std::string toString();
+
 private :
-	Carte m_pioche[50] = {};
+	Carte m_pioche[50];
 
 };
 
