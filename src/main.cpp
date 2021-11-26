@@ -18,6 +18,12 @@
 #define MAX_LIMIT 20
 
 int main(int argc, char *argv[]) {
+
+	//demander le nombre de joueur =>condition le nombre pair et supérieur ou égal à deux
+
+
+
+
 /*
 	// definir le nombre de carte :
 	Carte paquet[NB_CARTES];

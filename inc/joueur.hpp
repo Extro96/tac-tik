@@ -24,12 +24,15 @@ public :
 
 	void modifJoueur(Joueur);
 
+	int recupId();
+
 	Pion id_pion;
 	Carte carte_joueur;
 
 private :
 
-	int couleur; //chaque couleur correspond a un numero
+	int m_couleur; //chaque couleur correspond a un numero
+	int m_id; // permt de définri l'ordre de passage
 };
 
 
