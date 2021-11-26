@@ -18,6 +18,8 @@ class Pioche
 {
 public :
 
+	Pioche();
+
 	void initPioche();
 
 	void melangeCarte();
@@ -25,8 +27,8 @@ public :
 	void distribuerCarte();
 
 private :
+	Carte m_pioche[50] = {};
 
-	Carte pioche[50];
 };
 
 

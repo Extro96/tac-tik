@@ -13,8 +13,12 @@ class Carte
 
 public :
 
-	int valeur; // c'est dans la pioche qu'on créer les cartes et qu'on leur attribue un deux ou -4
-	int type; // avancer, permuter ou joker
+	Carte(int valeur, int type); // Constructeur
+
+private :
+
+	int m_valeur; // c'est dans la pioche qu'on créer les cartes et qu'on leur attribue un deux ou -4
+	int m_type; // 0 = avancer, 1 = permuter ou 2 = joker
 
 };
 
