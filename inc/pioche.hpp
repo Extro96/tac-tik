@@ -24,12 +24,14 @@ public :
 
 	void melangeCarte();
 
-	void distribuerCarte();
+	void distribuerCarte(int nb_joueur);
 
 	std::string toString();
 
 private :
-	Carte m_pioche[50];
+	Carte m_pioche[50] = {};
+	int m_indicePioche = 0;
+	int restePioche = 50 - m_indicePioche;
 
 };
 

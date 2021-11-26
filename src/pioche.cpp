@@ -7,6 +7,8 @@
 
 #include "../inc/pioche.hpp"
 #include "../inc/carte.hpp"
+#include "../inc/joueur.hpp"
+
 
 void Pioche::initPioche()
 {
@@ -40,14 +42,44 @@ void Pioche::initPioche()
 
 };
 
-void melangeCarte()
+void Pioche::melangeCarte()
 {
+	Carte tempCarte = Carte(0,0); //Carte temporaire
+
+	for (int i = 0; i < restePioche; i++){
+		int random = rand % restePioche;
+		tempCarte = m_pioche[random];
+		m_pioche[random] = m_pioche[i];
+	}
 
 };
 
-void distribuerCarte()
+void Pioche::distribuerCarte(int nb_joueur)
 {
 
+	if (restePioche > 4*nb_joueur)
+	{
+
+		//distribue les cartes aux joueurs
+		for (int i = 0; i < nb_joueur*4; i++){
+			for (int j = 0; j < nb_joueur; j++){
+
+				if (m_indicePioche < 50)
+				{
+					//telle carte va a telle joueur
+
+					m_indicePioche++;
+				}
+
+			}
+		}
+	}
+	else
+	{
+		//m�lange les cartes de 0 � indiceCarte
+		//distribue restecart et apr�s on reprend la pioche � 0 pour distribuer
+		//indiceCarte � 0 et on r�incr�mente
+	}
 };
 
 std::string Pioche::toString(){
@@ -57,4 +89,5 @@ std::string Pioche::toString(){
 	}
 	return retour;
 };
+
 
