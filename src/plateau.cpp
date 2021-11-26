@@ -6,11 +6,12 @@
  */
 
 
+#include "../inc/plateau.hpp"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#include "../inc/plateau.h"
 /*
 int plateauJeu(struct CasePlateau,int plateau){
 	int taille = malloc(nbrCase*sizeof(int));

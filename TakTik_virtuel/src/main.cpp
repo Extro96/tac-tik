@@ -9,16 +9,16 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "../inc/plateau.h"
-#include "../inc/carte.h"
-#include "../inc/joueur.h"
+#include "../inc/carte.hpp"
+#include "../inc/joueur.hpp"
+#include "../inc/plateau.hpp"
 
 #define NB_JOUEUR 4
 #define NB_CARTES (4*12+2)
 #define MAX_LIMIT 20
 
 int main(int argc, char *argv[]) {
-/*
+
 	// definir le nombre de carte :
 	Carte paquet[NB_CARTES];
 	initPioche(paquet);
@@ -29,11 +29,11 @@ int main(int argc, char *argv[]) {
 		//printf(" Symbole carte %d : et valeur carte %d : case %d \n",paquet[i].symboleCarte,paquet[i].valeurCarte,i);
 	}
 
-*/
+
 	//nombre de joueur dans les jeux
 	//Joueur player[NB_JOUEUR];
 	//initJoueur(player);
-	char tableau[NB_JOUEUR] = {"LAurence"}; //{"Laurence","Nathan","Aurore","Maman"};
+	char tableau[NB_JOUEUR] = {"Laurence"}; //{"Laurence","Nathan","Aurore","Maman"};
 	//char str[MAX_LIMIT];
 	for (int i = 0 ; i < NB_JOUEUR ; i++){
 		printf("hello");

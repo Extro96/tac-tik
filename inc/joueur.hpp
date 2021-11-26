@@ -3,34 +3,35 @@
  *
  *  Created on: 18 nov. 2020
  *      Author: lause
+ *
+ *      Le joueur est défini par une couleur, des cartes, des pions et un coéquipier ou non
+ *
  */
 
-#ifndef JOUEUR_H_
-#define JOUEUR_H_
+#ifndef JOUEUR_HPP_
+#define JOUEUR_HPP_
 
-#include "carte.h"
+#include "carte.hpp"
+#include "pion.hpp"
 
-typedef enum{
-	ROUGE,
-	VERT,
-	BLEU,
-	JAUNE,
-	NOIR,
-	BLANC
-}couleur_perso;
+#include <string>
 
-typedef struct{
-	int id;
-	char nom[30];
-	int score;
-	couleur_perso couleur;
-	//int position;
-	//Carte Carte;
-}Joueur;
+class Joueur{
 
-//struct Joueur init(void);
-//void joueurInit(void);
+public :
 
-void initJoueur(Joueur joueur[]);
+	void initJoueur(Joueur);
 
-#endif /* JOUEUR_H_ */
+	void modifJoueur(Joueur);
+
+	Pion id_pion;
+	Carte carte_joueur;
+
+private :
+
+	int couleur; //chaque couleur correspond a un numero
+};
+
+
+
+#endif /* JOUEUR_HPP_ */

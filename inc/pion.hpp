@@ -15,20 +15,13 @@ class Pion
 {
 public :
 
-	void positionActuel(int position)
-	{
+	int positionActuel();
 
-	}
+	void modifierPosition(int newPosition);
 
-	void modifierPosition(int newPosition)
-	{
+	void init();
 
-	}
-
-	void initialiserPosition(int createPion)
-	{
-
-	}
+	void manger();
 
 	int position;
 

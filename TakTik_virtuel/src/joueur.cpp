@@ -1,5 +1,5 @@
 /*
- * initialisation_joueur.cpp
+ * joueur.cpp
  *
  * Les fonctions présentent dans cette partie permettent d'initialiser joueur
  * Joueur est consitué :
@@ -13,13 +13,19 @@
  *      Author: lause
  */
 
+#include "../inc/joueur.hpp"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#include "../inc/joueur.h"
 
 #define NB_JOUEUR 4
+
+class joueur{
+	 méthode
+	 attribut
+};
 /*
 struct Joueur init(void){
   // temp structure variable

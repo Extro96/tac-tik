@@ -13,11 +13,12 @@
  *      Author: lause
  */
 
+#include "../inc/joueur.hpp"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#include "../inc/joueur.h"
 
 #define NB_JOUEUR 4
 /*

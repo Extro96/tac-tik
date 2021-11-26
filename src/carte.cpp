@@ -6,11 +6,12 @@
  *
  *Permet la creation des cartes du jeu de tactik
  */
+#include "../inc/carte.hpp"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#include "../inc/carte.h"
 
 #define NB_JOUEUR 4
 #define NB_CARTES (4*12+2)

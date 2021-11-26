@@ -5,30 +5,18 @@
  *      Author: lause
  */
 
-#ifndef CARTE_H_
-#define CARTE_H_
+#ifndef CARTE_PPH_
+#define CARTE_PPH_
 
-typedef enum{
-	UN,
-	DEUX,
-	TROIS,
-	QUATRE, //-4
-	CINQ,
-	SIX,
-	SEPT, //7X1
-	HUIT,
-	NEUF,
-	DIX,
-	DOUZE,
-	TREIZE,
-	JOKER
-} carte_symbole;
+class Carte
+{
 
-typedef struct{
-	int valeurCarte;
-	carte_symbole symboleCarte;
-}Carte;
+public :
 
-void initPioche(Carte paquet[]);
+	int valeur; // c'est dans la pioche qu'on créer les cartes et qu'on leur attribue un deux ou -4
+	int type; // avancer, permuter ou joker
 
-#endif /* CARTE_H_ */
+};
+
+
+#endif /* CARTE_PPH_ */

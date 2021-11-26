@@ -1,0 +1,36 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# eec_24LC16BH-I_ST
+#
+DEF eec_24LC16BH-I_ST U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L CNN
+F1 "eec_24LC16BH-I_ST" 0 300 50 H V L CNN
+F2 "Microchip-24LC16BH-I_ST-*" 0 400 50 H I L CNN
+F3 "" 0 500 50 H I L CNN
+F4 "MO-153" 0 600 50 H I L CNN "Code  JEDEC"
+F5 "revA, Nov-2008" 0 700 50 H I L CNN "Datasheet Version"
+F6 "8-Lead Plastic Thin Shrink Small Outline (ST) - 4.4mm Body [TSSOP]" 0 800 50 H I L CNN "Package Description"
+F7 "revBB, Aug-2009" 0 900 50 H I L CNN "Package Version"
+F8 "IC" 0 1000 50 H I L CNN "category"
+F9 "1395599" 0 1100 50 H I L CNN "ciiva ids"
+F10 "617b4ffdb94b20f9" 0 1200 50 H I L CNN "library id"
+F11 "Microchip" 0 1300 50 H I L CNN "manufacturer"
+F12 "TSSOP-ST8" 0 1400 50 H I L CNN "package"
+F13 "1302228516" 0 1500 50 H I L CNN "release date"
+F14 "221C2C4E-3E1B-455B-89C8-3FB4AC329DD4" 0 1600 50 H I L CNN "vault revision"
+F15 "yes" 0 1700 50 H I L CNN "imported"
+DRAW
+S 200 100 800 -600 1 1 0 f
+X A0 1 100 0 100 R 40 40 1 1 I
+X A1 2 100 -100 100 R 40 40 1 1 I
+X A2 3 100 -200 100 R 40 40 1 1 I
+X VSS 4 900 -500 100 L 40 40 1 1 W
+X SDA 5 900 -300 100 L 40 40 1 1 B
+X SCL 6 900 -200 100 L 40 40 1 1 I C
+X WP 7 900 0 100 L 40 40 1 1 I
+X VCC 8 100 -500 100 R 40 40 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library

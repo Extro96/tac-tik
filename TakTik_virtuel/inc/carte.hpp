@@ -1,15 +1,22 @@
 /*
- * carte.h
+ * carte.hpp
  *
  *  Created on: 18 nov. 2020
  *      Author: lause
+ *
+ *      Le jeu se compose de différents types de cartes ayant des fonctions différentes :
+ *      soit avancer
+ *      soit permuter
+ *      soit les deux
+ *
+ *
  */
 
-#ifndef CARTE_H_
-#define CARTE_H_
+#ifndef CARTE_HPP_
+#define CARTE_HPP_
 
 typedef enum{
-	UN,
+	UN, 	//avancer ou démarrer
 	DEUX,
 	TROIS,
 	QUATRE, //-4
@@ -18,10 +25,10 @@ typedef enum{
 	SEPT, //7X1
 	HUIT,
 	NEUF,
-	DIX,
+	DIX,	//avancer ou démarrer
 	DOUZE,
-	TREIZE,
-	JOKER
+	JOKER,
+	PERMUTER
 } carte_symbole;
 
 typedef struct{
@@ -29,6 +36,4 @@ typedef struct{
 	carte_symbole symboleCarte;
 }Carte;
 
-void initPioche(Carte paquet[]);
-
-#endif /* CARTE_H_ */
+#endif /* CARTE_HPP_ */

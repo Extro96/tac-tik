@@ -1,36 +1,29 @@
 /*
- * initialisation_joueur.h
+ * joueur.hpp
  *
  *  Created on: 18 nov. 2020
  *      Author: lause
+ *
+ *      Le joueur est défini par une couleur, des c
+ *
  */
 
-#ifndef JOUEUR_H_
-#define JOUEUR_H_
+#ifndef JOUEUR_HPP_
+#define JOUEUR_HPP_
 
-#include "carte.h"
+#include "carte.hpp"
+#include "pion.hpp"
 
-typedef enum{
-	ROUGE,
-	VERT,
-	BLEU,
-	JAUNE,
-	NOIR,
-	BLANC
-}couleur_perso;
+class joueur{
 
-typedef struct{
-	int id;
 	char nom[30];
 	int score;
-	couleur_perso couleur;
-	//int position;
-	//Carte Carte;
-}Joueur;
+	std::string couleur;
+};
 
 //struct Joueur init(void);
 //void joueurInit(void);
 
 void initJoueur(Joueur joueur[]);
 
-#endif /* JOUEUR_H_ */
+#endif /* JOUEUR_HPP_ */
