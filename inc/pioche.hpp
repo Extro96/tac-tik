@@ -8,7 +8,6 @@
 #ifndef PIOCHE_HPP_
 #define PIOCHE_HPP_
 
-#include <list>
 #include <string>
 
 #include "../inc/carte.hpp"

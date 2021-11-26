@@ -12,6 +12,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+Carte::Carte(){
+	m_valeur = 0;
+	m_type = 0;
+};
+
 Carte::Carte(int valeur, int type)
 {
 	m_valeur = valeur;
