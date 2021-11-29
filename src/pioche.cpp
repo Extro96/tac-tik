@@ -5,6 +5,8 @@
  *      Author: lause
  */
 
+#include <time.h>
+
 #include "../inc/pioche.hpp"
 #include "../inc/carte.hpp"
 #include "../inc/joueur.hpp"
@@ -44,10 +46,14 @@ void Pioche::initPioche()
 
 void Pioche::melangeCarte()
 {
+
+	// initialize random seed:
+  	srand (time(NULL));
+
 	Carte tempCarte = Carte(0,0); //Carte temporaire
 
 	for (int i = 0; i < restePioche; i++){
-		int random = rand % restePioche;
+		int random = rand() % restePioche;
 		tempCarte = m_pioche[random];
 		m_pioche[random] = m_pioche[i];
 	}
