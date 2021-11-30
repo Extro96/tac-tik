@@ -11,9 +11,8 @@
 #include "../inc/carte.hpp"
 #include "../inc/joueur.hpp"
 
-Pioche::Pioche(){
-	m_indicePioche = 0;
-	restePioche = 50 - m_indicePioche;
+Pioche::Pioche() : m_indicePioche(0),restePioche(50 - m_indicePioche) {
+
 }
 
 
@@ -47,7 +46,7 @@ void Pioche::initPioche()
 	m_pioche[48] = Carte(0,2);
 	m_pioche[49] = Carte(0,2);
 
-};
+}
 
 void Pioche::melangeCarte()
 {
@@ -63,7 +62,7 @@ void Pioche::melangeCarte()
 		m_pioche[random] = m_pioche[i];
 	}
 
-};
+}
 
 void Pioche::distribuerCarte(int nb_joueur)
 {
@@ -104,7 +103,7 @@ void Pioche::distribuerCarte(int nb_joueur)
 			m_pioche[i] = temp_pioche[i];
 		}
 	}
-};
+}
 
 std::string Pioche::toString(){
 	std::string retour ="";
@@ -112,6 +111,6 @@ std::string Pioche::toString(){
 		retour += m_pioche[i].toString() + "\n";
 	}
 	return retour;
-};
+}
 
 

@@ -9,31 +9,29 @@
 
 
 Pion::Pion(){
-	position = 0;
+	m_position = 0;
 }
-
 
 	//Retourne la position du pion
 int Pion::positionActuel()
 {
-	return 0;
+	return m_position;
 };
 
 	//Modifie la position du pion
 void Pion::modifierPosition(int newPosition)
 {
-	Pion::position = newPosition;
+	Pion::m_position = newPosition;
 };
 
 	//Initialise la position du pion en début de jeu
-void Pion::init()
+void Pion::init(int initPosition)
 {
-	Pion::position =
+	Pion::m_position = initPosition;
 };
 
 	//position lorsque le pion est mange
-void Pion::manger()
+void Pion::manger(int initPosition)
 {
-	init();
+	Pion::init(initPosition);
 };
-

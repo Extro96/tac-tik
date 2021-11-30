@@ -12,6 +12,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+Plateau::Plateau() : int caseMaison[5](),int caseJeu[5](),int caseCage[5](){
+
+}
+
 /*
 int plateauJeu(struct CasePlateau,int plateau){
 	int taille = malloc(nbrCase*sizeof(int));

@@ -11,9 +11,21 @@
 
 class Case
 {
+
 public :
-	int valeurCase;
-	int typeCase;
+
+	Case();
+	Carte(int valeurCase, int typeCase) : m_valeurCase(valeur),m_typeCase(type);
+
+	void setDispo(bool dispoCase);
+	bool getDispo();
+
+private :
+	bool m_dispoCase; //dispo case du plateau, true case libre, false cas non libre
+	int m_valeurCase; //valeur sur le plateau
+	int m_typeCase; //case depart, maison, cage
+
+
 };
 
 

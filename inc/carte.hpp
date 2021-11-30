@@ -15,8 +15,8 @@ class Carte
 
 public :
 
-	Carte();
-	Carte(int valeur, int type); // Constructeur
+	Carte();// Constructeur
+	Carte(int valeur, int type);
 	std::string toString();
 
 

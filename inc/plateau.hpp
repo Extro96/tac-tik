@@ -32,14 +32,13 @@
 #ifndef PLATEAU_HPP_
 #define PLATEAU_HPP_
 
-class CasePlateau
+class Plateau
 {
 public :
 
-	void definirCase(int caseMaison[],int caseJeu[],int caseCage[])
-	{
+	Plateau();
 
-	};
+	void definirCase(int caseMaison[],int caseJeu[],int caseCage[]);
 
 	int caseMaison[5];
 	int caseJeu[5];

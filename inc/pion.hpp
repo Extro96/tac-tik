@@ -21,11 +21,11 @@ public :
 
 	void modifierPosition(int newPosition);
 
-	void init();
+	void init(int initPosition);
 
-	void manger();
+	void manger(int initPosition);
 
-	int position;
+	int m_position;
 
 };
 

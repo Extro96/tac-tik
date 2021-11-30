@@ -19,10 +19,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-Joueur::Joueur(){
-	m_id = 0;
-	m_couleur = 0;
-	m_name = {};
+Joueur::Joueur() : m_id(0),m_couleur(0),m_name({}){
+
 }
 
 void Joueur::Joueur(int id, int couleur, char name[24])
