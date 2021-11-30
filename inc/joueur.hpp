@@ -4,7 +4,7 @@
  *  Created on: 18 nov. 2020
  *      Author: lause
  *
- *      Le joueur est défini par une couleur, des cartes, des pions et un coéquipier ou non
+ *      Le joueur est dï¿½fini par une couleur, des cartes, des pions et un coï¿½quipier ou non
  *
  */
 
@@ -20,19 +20,31 @@ class Joueur{
 
 public :
 
-	void initJoueur(Joueur);
+	Joueur();
+
+	Joueur(int id, int couleur, std::string name);
 
 	void modifJoueur(Joueur);
 
 	int recupId();
 
-	Pion id_pion;
-	Carte carte_joueur;
+	void setCouleur(int couleur);
+	int getCouleur();
+
+	void setId(int id);
+	int getId();
+
+	void ajouterCarte(Carte d_carte);
+	void retirerCarte(Carte r_carte);
+
 
 private :
 
 	int m_couleur; //chaque couleur correspond a un numero
-	int m_id; // permt de définri l'ordre de passage
+	int m_id; // permet de definir l'ordre de passage
+	Pion m_pion[4];
+	Carte m_carte_joueur[4];
+	std::string m_name;
 };
 
 

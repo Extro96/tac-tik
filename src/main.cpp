@@ -5,7 +5,13 @@
  *      Author: lause
  */
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <iostream>
+
+#include <iostream>
+using namespace std;
 
 #include "../inc/carte.hpp"
 #include "../inc/joueur.hpp"
@@ -20,8 +26,8 @@ int main(int argc, char *argv[]) {
 	std::cout << "hola";
 
 	return 0;
-
 }
+
 
 
 

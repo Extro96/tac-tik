@@ -11,6 +11,11 @@
 #include "../inc/carte.hpp"
 #include "../inc/joueur.hpp"
 
+Pioche::Pioche(){
+	m_indicePioche = 0;
+	restePioche = 50 - m_indicePioche;
+}
+
 
 void Pioche::initPioche()
 {
@@ -19,7 +24,7 @@ void Pioche::initPioche()
 	int type;
 
 
-	// Cr�ation des cartes avancer de 1 � 12
+	// Creation des cartes avancer de 1 a 12
 	for (i = 0; i<46; i+4){
 		type = 0;
 		val = 1;
@@ -82,9 +87,22 @@ void Pioche::distribuerCarte(int nb_joueur)
 	}
 	else
 	{
-		//m�lange les cartes de 0 � indiceCarte
+		//melange les cartes de 0 a indiceCarte
 		//distribue restecart et apr�s on reprend la pioche � 0 pour distribuer
-		//indiceCarte � 0 et on r�incr�mente
+		//indiceCarte � 0 et on r�incremente
+		Carte temp_pioche[50] = {};
+		Pioche::melangeCarte();
+
+		for(int i = 0; i<m_indicePioche;i++){
+			temp_pioche[i] = m_pioche[50 - m_indicePioche + i];
+		}
+		for(int i = 0; i<50 - m_indicePioche;i++){
+			temp_pioche[i+m_indicePioche] = m_pioche[i];
+		}
+
+		for(int i = 0; i<50; i++){
+			m_pioche[i] = temp_pioche[i];
+		}
 	}
 };
 
