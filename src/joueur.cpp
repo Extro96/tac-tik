@@ -14,7 +14,7 @@
  */
 
 #include "../inc/joueur.hpp"
-#include "carte.cpp"
+#include "../inc/carte.hpp"
 
 #include <stdio.h>
 #include <stdlib.h>
