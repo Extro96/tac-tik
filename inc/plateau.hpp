@@ -41,9 +41,9 @@ public :
 
 	};
 
-	int caseMaison[];
-	int caseJeu[];
-	int caseCage[];
+	int caseMaison[5];
+	int caseJeu[5];
+	int caseCage[5];
 };
 
 #endif /* PLATEAU_HPP_ */

@@ -5,38 +5,35 @@
  *      Author: lause
  */
 
+#include "../inc/pion.hpp"
 
 
-
-class Pion
-{
-public :
+Pion::Pion(){
+	position = 0;
+}
 
 
 	//Retourne la position du pion
-	int positionActuel()
-	{
-		return 0;
-	};
+int Pion::positionActuel()
+{
+	return 0;
+};
 
 	//Modifie la position du pion
-	void modifierPosition(int newPosition)
-	{
-
-	};
+void Pion::modifierPosition(int newPosition)
+{
+	Pion::position = newPosition;
+};
 
 	//Initialise la position du pion en début de jeu
-	void init()
-	{
-
-	};
-
-	//position lorsque le pion est mangé
-	void manger()
-	{
-
-	};
-
-	int position;
-
+void Pion::init()
+{
+	Pion::position =
 };
+
+	//position lorsque le pion est mange
+void Pion::manger()
+{
+	init();
+};
+

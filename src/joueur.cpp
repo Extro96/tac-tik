@@ -19,75 +19,69 @@
 #include <stdlib.h>
 #include <string.h>
 
-
-#define NB_JOUEUR 4
-/*
-struct Joueur init(void){
-  // temp structure variable
-
-  printf("Enter le nom : ");
-  scanf("%s", player.nom);
-
-  player.score = 0;
-  printf("Score : %d ", player.score);
-
-  player.couleur = nb;
-
-  return player.nom, player.score, player.couleur;
+Joueur::Joueur(){
+	m_id = 0;
+	m_couleur = 0;
+	m_name = {};
 }
 
-void joueurInit(void){
-	for (int i =0 ; i < NB_JOUEUR ; i++){
-		int nb = i;
-		init();
+void Joueur::Joueur(int id, int couleur, char name[24])
+{
+	m_id = id; //util ?
+	m_couleur = couleur;
+	for (int i = 0 ; i<24; i++){
+		m_name[i] = name[i];
 	}
-}*/
-
-void initJoueur(Joueur player[]){
-	int nb = 0;
-
-	do{
-
-		player[nb].id = nb;
-		printf("L'id : %d \n", player[nb].id);
-		player[nb].couleur = nb;
-		printf("La couleur : %d \n", player[nb].couleur);
-
-		//char nom[30]; //pas la peine
-		//printf("Le nom : %s \n", player[nb].nom);
-		player[nb].score = 0;
-		printf("Le score : %d \n\n", player[nb].score);
-
-		nb += 1;
-
-
-	}while(NB_JOUEUR != nb);
-	//char name[30] = {0};
-	/*
-	for (int i = 0; i<NB_JOUEUR;i++){
-
-		printf("Entrer le nom du joueur %d : \n ",player[i].id);
-
-			switch(player[i].id)
-			{
-			case 1 :
-
-				//fflush(stdin);
-				//scanf ("%s", name);
-				getchar();
-				break;
-			case 2 :
-				//fflush(stdin);
-				scanf ("%c", player[2].nom);
-				break;
-			case 3 :
-				//fflush(stdin);
-				scanf ("%c", player[3].nom);
-				break;
-			default :
-				printf("hgsdyusg");
-			}
-	}*/
-
 }
 
+void Joueur::setId(int id){
+	m_id = id;
+}
+
+int Joueur::getId(){
+	return m_id;
+}
+
+
+void Joueur::setCouleur(int couleur){
+	m_couleur = couleur;
+}
+
+int Joueur::getCouleur(){
+	return m_couleur;
+}
+
+void ajouterCarte(Carte d_carte){
+	Joueur::m_carte_joueur[0] = d_carte;
+	for(int i = 2; i = 0 ; i--){
+		Joueur::m_carte_joueur[i+1] = Joueur::m_carte_joueur[i];
+	}
+}
+
+void retirerCarte(Carte r_carte){
+	//carte choisie en position 0 main du joueur
+	if (r_carte == Joueur::m_carte_joueur[0]){
+		Joueur::m_carte_joueur[0] = {};
+	}
+	else
+	{
+		//carte choisie en position 1 main du joueur
+		if (r_carte == Joueur::m_carte_joueur[1]){
+				Joueur::m_carte_joueur[1] = {};
+		}
+		else
+		{
+			//carte choisie en position 2 main du joueur
+			if (r_carte == Joueur::m_carte_joueur[2]){
+					Joueur::m_carte_joueur[2] = {};
+			}
+			else
+			{
+				//carte choisie en position 3 main du joueur
+				Joueur::m_carte_joueur[3] = {};
+
+			}
+		}
+	}
+
+}

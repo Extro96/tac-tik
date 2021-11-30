@@ -15,6 +15,8 @@ class Pion
 {
 public :
 
+	Pion();
+
 	int positionActuel();
 
 	void modifierPosition(int newPosition);
