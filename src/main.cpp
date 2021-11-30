@@ -17,17 +17,13 @@ using namespace std;
 #include "../inc/joueur.hpp"
 #include "../inc/plateau.hpp"
 
-#define NB_JOUEUR 4
-#define NB_CARTES (4*12+2)
-#define MAX_LIMIT 20
+int main(int argc, char *argv[]) {
 
+	Carte maNouvelCarte = Carte(5,1);
 
-int main() {
+	std::cout << maNouvelCarte.toString();
 
-	//demander quelle couleur le joueur X veut :
-	//liste des couleurs
-	int couleur = 0;
-
+	std::cout << "hola";
 
 	return 0;
 }

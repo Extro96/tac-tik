@@ -1,4 +1,5 @@
 # ignore all build files
 *.o
 *.exe
+build/
 /Debug/

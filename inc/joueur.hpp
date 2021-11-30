@@ -4,7 +4,7 @@
  *  Created on: 18 nov. 2020
  *      Author: lause
  *
- *      Le joueur est défini par une couleur, des cartes, des pions et un coéquipier ou non
+ *      Le joueur est dï¿½fini par une couleur, des cartes, des pions et un coï¿½quipier ou non
  *
  */
 
@@ -22,7 +22,7 @@ public :
 
 	Joueur();
 
-	Joueur(int id, int couleur, char name[24]);
+	Joueur(int id, int couleur, std::string name);
 
 	void modifJoueur(Joueur);
 
@@ -44,7 +44,7 @@ private :
 	int m_id; // permet de definir l'ordre de passage
 	Pion m_pion[4];
 	Carte m_carte_joueur[4];
-	char m_name[24];
+	std::string m_name;
 };
 
 

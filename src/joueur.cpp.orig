@@ -19,9 +19,15 @@
 #include <stdlib.h>
 #include <string.h>
 
+<<<<<<< HEAD
+Joueur::Joueur() : m_id(0),m_couleur(0),m_name({}){
 
-Joueur::Joueur() : m_id(0),m_couleur(0),m_name("DEFAULT"){
-
+=======
+Joueur::Joueur(){
+	m_id = 0;
+	m_couleur = 0;
+	m_name = "DEFAULT";
+>>>>>>> refs/remotes/origin/main
 }
 
 Joueur::Joueur(int id, int couleur, std::string name)

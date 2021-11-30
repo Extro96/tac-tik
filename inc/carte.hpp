@@ -28,5 +28,7 @@ private :
 
 };
 
+void monTest();
+
 
 #endif /* CARTE_PPH_ */
