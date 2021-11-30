@@ -21,8 +21,13 @@ int main(int argc, char *argv[]) {
 
 	Carte maNouvelCarte = Carte(5,1);
 
-	std::cout << maNouvelCarte.toString();
+	Carte deuidme = Carte(5,1);
 
+	if(maNouvelCarte == deuidme){
+		std::cout << "ca marche";
+	}else{
+		std::cout << "ca marche po";
+	}
 	std::cout << "hola";
 
 	return 0;
