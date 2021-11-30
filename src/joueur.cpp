@@ -48,14 +48,14 @@ int Joueur::getCouleur(){
 	return m_couleur;
 }
 
-void ajouterCarte(Carte d_carte){
+void Joueur::ajouterCarte(Carte d_carte){
 	m_carte_joueur[0] = d_carte;
 	for(int i = 2; i = 0 ; i--){
 		m_carte_joueur[i+1] = m_carte_joueur[i];
 	}
 }
 
-void retirerCarte(Carte r_carte){
+void Joueur::retirerCarte(Carte r_carte){
 	//carte choisie en position 0 main du joueur
 	if (r_carte == m_carte_joueur[0]){
 		m_carte_joueur[0] = {};

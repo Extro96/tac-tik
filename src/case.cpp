@@ -23,7 +23,7 @@ void Case::setDispo(bool dispoCase){
 bool Case::getDispo(){
 	return m_dispoCase;
 }
-
+/*
 void Case::setValeur(int valeurCase){
 	m_valeurCase = valeurCase;
 }
@@ -38,4 +38,4 @@ void Case::setType(int typeCase){
 
 int Case::getType(){
 	return m_typeCase;
-}
+}*/
