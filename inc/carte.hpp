@@ -15,9 +15,10 @@ class Carte
 
 public :
 
-	Carte();
-	Carte(int valeur, int type); // Constructeur
+	Carte();// Constructeur
+	Carte(int valeur, int type);
 	std::string toString();
+	bool estEgal(Carte const& b) const;
 
 
 
@@ -28,7 +29,6 @@ private :
 
 };
 
-void monTest();
-
+bool operator==(Carte const& r_carte, Carte const& carte_joueur);
 
 #endif /* CARTE_PPH_ */

@@ -21,11 +21,15 @@ public :
 
 	void modifierPosition(int newPosition);
 
-	void init();
+	void init(int initPosition);
 
-	void manger();
+	void manger(int initPosition);
 
-	int position;
+	void Depart(int depPosition);
+
+	int m_position;
+
+	bool m_intouchablePion;
 
 };
 

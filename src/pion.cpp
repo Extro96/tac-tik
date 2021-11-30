@@ -8,32 +8,38 @@
 #include "../inc/pion.hpp"
 
 
-Pion::Pion(){
-	position = 0;
-}
+Pion::Pion() : m_position(0), m_intouchablePion(false){
 
+}
 
 	//Retourne la position du pion
 int Pion::positionActuel()
 {
-	return 0;
+	return m_position;
 };
 
 	//Modifie la position du pion
 void Pion::modifierPosition(int newPosition)
 {
-	Pion::position = newPosition;
+	Pion::m_position = newPosition;
+	m_intouchablePion = false;
 };
 
 	//Initialise la position du pion en début de jeu
-void Pion::init()
+void Pion::init(int initPosition)
 {
-	Pion::position =
+	Pion::m_position = initPosition;
 };
 
 	//position lorsque le pion est mange
-void Pion::manger()
+void Pion::manger(int initPosition)
 {
-	init();
+	Pion::init(initPosition);
 };
+
+	//position sur la case depart
+void Pion::Depart(int caseDepart){
+	Pion::m_position = caseDepart;
+	m_intouchablePion = true;
+}
 

@@ -13,20 +13,13 @@
 #include <string.h>
 #include <iostream>
 
-Carte::Carte(){
-	m_valeur = 0;
-	m_type = 0;
-};
+Carte::Carte() : m_valeur(0), m_type(0){
 
-Carte::Carte(int valeur, int type)
-{
-	m_valeur = valeur;
-	m_type = type;
-};
+}
 
-void monTest(){
-	std::cout << "bordel";
-};
+Carte::Carte(int valeur, int type) : m_valeur(valeur),m_type(type){
+
+}
 
 std::string Carte::toString(){
 	std::string type ="";
@@ -48,3 +41,15 @@ std::string Carte::toString(){
 	std::string retour = "carte de type " + type + " et de valeur " + std::to_string(m_valeur);
 	return retour;
 }
+
+bool Carte::estEgal(Carte const& b) const
+{
+	return(m_type == b.m_type && m_valeur == b.m_valeur);
+};
+
+bool operator==(Carte const& a, Carte const& b)
+{
+    return a.estEgal(b);
+}
+
+

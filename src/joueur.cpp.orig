@@ -14,15 +14,20 @@
  */
 
 #include "../inc/joueur.hpp"
-#include "carte.cpp"
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+<<<<<<< HEAD
+Joueur::Joueur() : m_id(0),m_couleur(0),m_name({}){
 
-Joueur::Joueur() : m_id(0),m_couleur(0),m_name("DEFAULT"){
-
+=======
+Joueur::Joueur(){
+	m_id = 0;
+	m_couleur = 0;
+	m_name = "DEFAULT";
+>>>>>>> refs/remotes/origin/main
 }
 
 Joueur::Joueur(int id, int couleur, std::string name)
@@ -49,14 +54,14 @@ int Joueur::getCouleur(){
 	return m_couleur;
 }
 
-void Joueur::ajouterCarte(Carte d_carte){
+void ajouterCarte(Carte d_carte){
 	m_carte_joueur[0] = d_carte;
 	for(int i = 2; i = 0 ; i--){
 		m_carte_joueur[i+1] = m_carte_joueur[i];
 	}
 }
 
-void Joueur::retirerCarte(Carte r_carte){
+void retirerCarte(Carte r_carte){
 	//carte choisie en position 0 main du joueur
 	if (r_carte == m_carte_joueur[0]){
 		m_carte_joueur[0] = {};

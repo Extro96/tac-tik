@@ -48,5 +48,4 @@ private :
 };
 
 
-
 #endif /* JOUEUR_HPP_ */
