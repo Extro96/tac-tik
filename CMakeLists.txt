@@ -11,7 +11,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Create a sources variable with a link to all cpp files to compile
 set(SOURCES
     src/carte.cpp
+    src/joueur.cpp
+    src/pion.cpp
+    src/pioche.cpp
+    src/plateau.cpp
+    src/case.cpp
     src/main.cpp
+
 )
  
 # configure a header file to pass some of the CMake settings

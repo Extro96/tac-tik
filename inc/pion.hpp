@@ -25,7 +25,11 @@ public :
 
 	void manger(int initPosition);
 
+	void Depart(int depPosition);
+
 	int m_position;
+
+	bool m_intouchablePion;
 
 };
 

@@ -10,18 +10,14 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
-Plateau::Plateau() : int caseMaison[5](),int caseJeu[5](),int caseCage[5](){
-
-}
-
-/*
-int plateauJeu(struct CasePlateau,int plateau){
-	int taille = malloc(nbrCase*sizeof(int));
-
-	for (int i = 0; i<nbrCase; i++){
-		plateau[]
+Plateau::Plateau(){
+	for (int i = 0; i<32; i++){
+		m_caseMaison[i] = 128 + i;
+		m_caseCage[i] = 160 + i;
+	}
+	for(int i = 0; i<128; i++){
+		m_caseJeu[i] = i;
 	}
 }
-*/
+

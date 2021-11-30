@@ -6,14 +6,21 @@
  */
 
 #include "../inc/case.hpp"
-#include "../inc/pion.hpp"
 
 #include <stdio.h>
 #include <stdlib.h>
 
-Case::Case() : m_valeurCase(0), m_typeCase(0), m_dispoCase(true)
+Case::Case() : m_valeurCase(0), m_typeCase(0), m_dispoCase(true), m_couleurCase(0)
 {
 
+}
+
+Case::Case(int valeurCase, int typeCase, bool dispoCase, int couleurCase)
+{
+	m_valeurCase = valeurCase;
+	m_typeCase = typeCase;
+	m_dispoCase = dispoCase;
+	m_couleurCase = couleurCase;
 }
 
 void Case::setDispo(bool dispoCase){
@@ -23,7 +30,7 @@ void Case::setDispo(bool dispoCase){
 bool Case::getDispo(){
 	return m_dispoCase;
 }
-/*
+
 void Case::setValeur(int valeurCase){
 	m_valeurCase = valeurCase;
 }
@@ -38,4 +45,12 @@ void Case::setType(int typeCase){
 
 int Case::getType(){
 	return m_typeCase;
-}*/
+}
+
+void Case::setCouleur(int couleurCase){
+	m_couleurCase = couleurCase;
+}
+
+int Case::getCouleur(){
+	return m_couleurCase;
+}

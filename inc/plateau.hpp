@@ -38,11 +38,12 @@ public :
 
 	Plateau();
 
-	void definirCase(int caseMaison[],int caseJeu[],int caseCage[]);
+private :
 
-	int caseMaison[5];
-	int caseJeu[5];
-	int caseCage[5];
+	int m_caseMaison[32];
+	int m_caseJeu[128];
+	int m_caseCage[32];
+
 };
 
 #endif /* PLATEAU_HPP_ */
