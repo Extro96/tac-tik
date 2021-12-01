@@ -32,11 +32,13 @@
 #ifndef PLATEAU_HPP_
 #define PLATEAU_HPP_
 
+
 class Plateau
 {
 public :
 
 	Plateau();
+
 
 private :
 

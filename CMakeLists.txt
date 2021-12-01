@@ -16,6 +16,7 @@ set(SOURCES
     src/pioche.cpp
     src/plateau.cpp
     src/case.cpp
+    src/jeu.cpp
     src/main.cpp
 
 )

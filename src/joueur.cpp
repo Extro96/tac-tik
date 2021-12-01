@@ -51,7 +51,7 @@ int Joueur::getCouleur(){
 
 void Joueur::ajouterCarte(Carte d_carte){
 	m_carte_joueur[0] = d_carte;
-	for(int i = 2; i = 0 ; i--){
+	for(int i = 2; i>=0 ; i--){
 		m_carte_joueur[i+1] = m_carte_joueur[i];
 	}
 }
