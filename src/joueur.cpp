@@ -49,11 +49,16 @@ int Joueur::getCouleur(){
 	return m_couleur;
 }
 
+//recuperer les cartes retournees par distribuer pioche
 void Joueur::ajouterCarte(Carte d_carte){
 	m_carte_joueur[0] = d_carte;
+	/*
 	for(int i = 2; i>=0 ; i--){
 		m_carte_joueur[i+1] = m_carte_joueur[i];
-	}
+	}*/
+	m_carte_joueur[1] = m_carte_joueur[0];
+	m_carte_joueur[2] = m_carte_joueur[1];
+	m_carte_joueur[3] = m_carte_joueur[2];
 }
 
 void Joueur::retirerCarte(Carte r_carte){
@@ -82,4 +87,8 @@ void Joueur::retirerCarte(Carte r_carte){
 		}
 	}
 
+}
+
+Carte Joueur::choixCarte(int carte_choisie){
+	return carte_choisie;
 }

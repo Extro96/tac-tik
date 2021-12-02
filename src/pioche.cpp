@@ -64,24 +64,22 @@ void Pioche::melangeCarte()
 
 }
 
-void Pioche::distribuerCarte(int nb_joueur)
+void Pioche::distribuerCarte(int nb_joueur, Joueur joueur_actuel)
 {
+
+	int cartepioche = joueur_actuel.getId();
+
 
 	if (restePioche > 4*nb_joueur)
 	{
 
 		//distribue les cartes aux joueurs
-		for (int i = 0; i < nb_joueur*4; i++){
-			for (int j = 0; j < nb_joueur; j++){
+		for (int i = 0; i < 4; i++){
+			joueur_actuel.ajouterCarte(m_pioche[cartepioche]);
+			cartepioche = cartepioche+nb_joueur;
 
-				if (m_indicePioche < 50)
-				{
-					//telle carte va a telle joueur
+			m_indicePioche++;
 
-					m_indicePioche++;
-				}
-
-			}
 		}
 	}
 	else
@@ -102,7 +100,18 @@ void Pioche::distribuerCarte(int nb_joueur)
 		for(int i = 0; i<50; i++){
 			m_pioche[i] = temp_pioche[i];
 		}
+
+		//distribue les cartes aux joueurs
+		for (int i = 0; i < 4; i++){
+			joueur_actuel.ajouterCarte(m_pioche[cartepioche]);
+			cartepioche = cartepioche+nb_joueur;
+
+			m_indicePioche++;
+
+		}
+
 	}
+
 }
 
 std::string Pioche::toString(){

@@ -10,7 +10,8 @@
 
 #include <string>
 
-#include "../inc/carte.hpp"
+#include "carte.hpp"
+#include "joueur.hpp"
 
 
 class Pioche
@@ -23,7 +24,7 @@ public :
 
 	void melangeCarte();
 
-	void distribuerCarte(int nb_joueur);
+	void distribuerCarte(int nb_joueur, Joueur joueur_actuel);
 
 	std::string toString();
 
