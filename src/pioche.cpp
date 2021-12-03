@@ -76,6 +76,7 @@ void Pioche::melangeCarte()
 
 }
 
+// Ici il faut changer joueur_actuel par listeJoueur
 void Pioche::distribuerCarte(int nb_joueur, Joueur joueur_actuel)
 {
 

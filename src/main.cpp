@@ -26,6 +26,7 @@ int main(int argc, char *argv[]) {
 	std::cout << "Combien de joueurs ? \n";
 	std::cin >> nbJoueur;
 
+	// On créer une instance de Jeu() limité à nbJoueur et on l'initialise avec ses joueurs.
 	Jeu monJeu = Jeu(nbJoueur);
 	monJeu.initJeu();
 

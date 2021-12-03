@@ -109,8 +109,8 @@ Carte Joueur::choixCarte(Carte carteChoisie){
 	return carteChoisie;
 }
 
-void Joueur::joueurRename(){
 
+void Joueur::joueurRename(){
 	cout << "Nom du joueur : \n";
 	cin >> m_name;
 

@@ -35,7 +35,7 @@ void Jeu::initJeu()
 	maPioche.melangeCarte();
 	std::cout << maPioche.toString();
 
-	m_listeJoueur[8] = initJoueur();	// On assigne les joueurs
+	m_listeJoueur[8] = initJoueur();	// On initialise les joueurs
 
 }
 
@@ -50,7 +50,7 @@ void Jeu::echangeCarte(Carte echange_joueur1, Carte echange_joueur2){
 		echange_joueur2 = temp;
 }
 
-// Permet d'initialiser le bon nombre de joueurs
+// Permet d'initialiser les joueurs avec leur couleurs et leurs noms
 Joueur Jeu::initJoueur(){
 	int couleur;
 	std::string name;
