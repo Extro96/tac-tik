@@ -39,6 +39,10 @@ public :
 
 	Carte choixCarte(Carte carteChoisie);
 
+	std::string toString();
+
+	void joueurName();
+
 private :
 
 	int m_couleur; //chaque couleur correspond a un numero

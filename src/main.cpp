@@ -20,7 +20,7 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 
-	int nb_joueur;
+	int const nb_joueur;
 
 	cout << "Quel est le nombre de joueur ?";
 
@@ -28,7 +28,8 @@ int main(int argc, char *argv[]) {
 
 
 	//Pioche maPioche = Pioche();
-	Jeu monJeu;
+
+	Jeu monJeu[nb_joueur] = Jeu();
 
 	/*
 	std::cout << "Initialisation de la pioche: \n";

@@ -17,11 +17,17 @@
 
 using namespace std;
 
-Jeu::Jeu() : m_tour_de_jeu(0){
-
+Jeu::Jeu() {
+	m_tour_de_jeu = 0;
+	m_nb_joueur = 2;
+}
+Jeu::Jeu(int nb_joueur, Joueur listeJoueur) {
+	m_tour_de_jeu = 0;
+	m_nb_joueur = nb_joueur;
+	m_listeJoueur = listeJoueur;
 }
 
-void Jeu::initJeu(int nb_joueur)
+void Jeu::initJeu()
 {
 
 	Pioche maPioche = Pioche();
@@ -32,24 +38,18 @@ void Jeu::initJeu(int nb_joueur)
 	maPioche.melangeCarte();
 	std::cout << maPioche.toString();
 
-	Joueur listeJoueur[nb_joueur];
+
 
 	//demande nombre de joueurs
 
+
+
 	//creation de tous les joueurs, demander la couleur
+	Jeu::nomJoueur();
 
-	for(int i = 1; i<=nb_joueur; i++){
-		cout << "Quel est le nombre de joueur";
-		cout << i;
-		cout << " ? " ;
-		cin >> nameJoueur ;
-		Joueur nameJoueur();
-		listeJoueur [i-1] = nameJoueur;
-		cout << " \n " ;
+	for (int i=0 ; i<m_nb_joueur; i++){
+		m_listeJoueur[i].joueurName;
 	}
-
-
-	//Jeu::nomJoueur(nb_joueur);
 
 	//prevoir une boucle ou autre pour faire chaque joueur, suivant leur nom
 /*
@@ -82,26 +82,38 @@ void Jeu::echangeCarte(Carte echange_joueur1, Carte echange_joueur2){
 		echange_joueur2 = temp;
 
 }
-/*
-void Jeu::nomJoueur(int nb_joueur){
 
-	switch(nb_joueur){
+void Jeu::nomJoueur(){
+/*
+	switch(m_nb_joueur){
 		case 2 :
 			Joueur joueur1, joueur2;
+			m_listeJoueur = { joueur1, joueur2};
 			break;
 		case 4 :
 			Joueur joueur1, joueur2, joueur3, joueur4;
+			m_listeJoueur = { joueur1, joueur2, joueur3, joueur4};
 			break;
 		case 6 :
 			Joueur joueur1, joueur2, joueur3, joueur4, joueur5, joueur6;
+			m_listeJoueur = { joueur1, joueur2, joueur3, joueur4, joueur5, joueur6};
 			break;
 		case 8 :
 			Joueur joueur1, joueur2, joueur3, joueur4, joueur5, joueur6, joueur7, joueur8;
+			m_listeJoueur = { joueur1, joueur2, joueur3, joueur4, joueur5, joueur6, joueur7, joueur8};
 			break;
 		default :
 			break;
 	}
+*/
 
+	if(m_nb_joueur>=2){
+		Joueur joueur1, joueur2;
+		m_listeJoueur = { joueur1, joueur2};
+	}
+	if(m_nb_joueur>=4){
+		Joueur joueur3, joueur4;
+		m_listeJoueur = m_listeJoueur ++ { joueur3, joueur4};
+	}
 
 }
-*/

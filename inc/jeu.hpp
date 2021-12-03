@@ -16,18 +16,22 @@ class Jeu
 public :
 
 	Jeu();
+	Jeu(int nb_joueur, Joueur listeJoueur);
 
-	void initJeu(int nb_joueur);
+	void initJeu();
 
 	void debutTourDeJeu(int nb_joueur, Joueur joueur_actuel, Pioche pioche_cree);
 
 	void echangeCarte(Carte echange_joueur1, Carte echange_joueur2);
 
-	//void nomJoueur(int nb_joueur);
+	void nomJoueur();
 
 
 private :
 	int m_tour_de_jeu;
+	int m_nb_joueur;
+	Joueur m_listeJoueur[];
+
 };
 
 

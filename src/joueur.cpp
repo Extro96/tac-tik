@@ -19,11 +19,51 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <iostream>
 
+using namespace std;
 
 Joueur::Joueur() : m_id(0),m_couleur(0),m_name("DEFAULT"){
 
 }
+
+std::string Joueur::toString(){
+	std::string couleur ="";
+
+	switch(m_couleur){
+		case 0:
+			couleur = "bleu";
+			break;
+		case 1:
+			couleur = "rouge";
+			break;
+		case 2:
+			couleur = "jaune";
+			break;
+		case 3:
+			couleur = "vert";
+			break;
+		case 4:
+			couleur = "noir";
+			break;
+		case 5:
+			couleur = "blanc";
+			break;
+		case 6:
+			couleur = "violet";
+			break;
+		case 7:
+			couleur = "orange";
+			break;
+		default:
+			couleur = "erreur";
+	}
+
+	std::string retour = "La couleur" + couleur + " et de valeur " + std::to_string(m_couleur);
+	return retour;
+}
+
+
 
 Joueur::Joueur(int id, int couleur, std::string name)
 {
@@ -91,4 +131,11 @@ void Joueur::retirerCarte(Carte r_carte){
 
 Carte Joueur::choixCarte(Carte carteChoisie){
 	return carteChoisie;
+}
+
+void Joueur::joueurName(){
+
+	cout << "Nom du joueur : \n";
+	cin >> m_name;
+
 }
