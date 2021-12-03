@@ -80,7 +80,6 @@ int Joueur::getId(){
 	return m_id;
 }
 
-
 void Joueur::setCouleur(int couleur){
 	m_couleur = couleur;
 }
@@ -109,6 +108,15 @@ Carte Joueur::choixCarte(Carte carteChoisie){
 	return carteChoisie;
 }
 
+Pion Joueur::getPion(){
+	return m_pion[4];
+}
+
+void Joueur::initPion(){
+	for(int i=0; i<4;i++){
+		m_pion[i] = Pion(m_id * 4 + i + 120); // changer 120 par la valeur de la premiere case
+	}
+}
 
 void Joueur::joueurRename(){
 	cout << "Nom du joueur : \n";

@@ -4,7 +4,7 @@
  *  Created on: 26 nov. 2021
  *      Author: lause
  *
- *      Pion est défini par une position
+ *      Pion est dï¿½fini par une position
  */
 
 #ifndef PION_HPP_
@@ -16,20 +16,18 @@ class Pion
 public :
 
 	Pion();
+	Pion(int posInit);
 
-	int positionActuel();
+	int getPosition();
 
 	void modifierPosition(int newPosition);
 
-	void init(int initPosition);
+	void manger();
 
-	void manger(int initPosition);
-
-	void Depart(int depPosition);
-
-	int m_position;
-
-	bool m_intouchablePion;
+private :
+	int m_position = 0;
+	int m_positionInitial = 0;
+	bool m_intouchablePion = true;
 
 };
 

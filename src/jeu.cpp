@@ -65,6 +65,7 @@ Joueur Jeu::initJoueur(){
 
 		//Création du joueur dans la liste
 		ListeJoueur[i] = Joueur(i,couleur,name);
+		ListeJoueur[i].initPion(); // Initialisation des pions du joueurs par rapport à son id (cases de départs)
 	}
 
 	return ListeJoueur[8];

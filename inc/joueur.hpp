@@ -39,6 +39,10 @@ public :
 
 	Carte choixCarte(Carte carteChoisie);
 
+	Pion getPion();
+
+	void initPion();
+
 	std::string toString();
 
 	void joueurRename();
