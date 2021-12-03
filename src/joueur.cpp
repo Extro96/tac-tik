@@ -59,7 +59,7 @@ std::string Joueur::toString(){
 			couleur = "erreur";
 	}
 
-	std::string retour = "La couleur" + couleur + " et de valeur " + std::to_string(m_couleur);
+	std::string retour = "joueur de couleur" + couleur;
 	return retour;
 }
 
@@ -102,30 +102,6 @@ void Joueur::ajouterCarte(Carte d_carte){
 }
 
 void Joueur::retirerCarte(Carte r_carte){
-	//carte choisie en position 0 main du joueur
-	if (r_carte == m_carte_joueur[0]){
-		m_carte_joueur[0] = {};
-	}
-	else
-	{
-		//carte choisie en position 1 main du joueur
-		if (r_carte == m_carte_joueur[1]){
-				m_carte_joueur[1] = {};
-		}
-		else
-		{
-			//carte choisie en position 2 main du joueur
-			if (r_carte == m_carte_joueur[2]){
-					m_carte_joueur[2] = {};
-			}
-			else
-			{
-				//carte choisie en position 3 main du joueur
-				m_carte_joueur[3] = {};
-
-			}
-		}
-	}
 
 }
 
@@ -133,7 +109,7 @@ Carte Joueur::choixCarte(Carte carteChoisie){
 	return carteChoisie;
 }
 
-void Joueur::joueurName(){
+void Joueur::joueurRename(){
 
 	cout << "Nom du joueur : \n";
 	cin >> m_name;

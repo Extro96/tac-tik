@@ -1,7 +1,7 @@
 /*
  * jeu.hpp
  *
- *  Created on: 1 déc. 2021
+ *  Created on: 1 dï¿½c. 2021
  *      Author: lause
  */
 
@@ -16,7 +16,7 @@ class Jeu
 public :
 
 	Jeu();
-	Jeu(int nb_joueur, Joueur listeJoueur);
+	Jeu(int nb_joueur);
 
 	void initJeu();
 
@@ -26,12 +26,13 @@ public :
 
 	void nomJoueur();
 
+	Joueur initJoueur();
+
 
 private :
 	int m_tour_de_jeu;
-	int m_nb_joueur;
-	Joueur m_listeJoueur[];
-
+	int m_nbJoueur;
+	Joueur m_listeJoueur[8];
 };
 
 

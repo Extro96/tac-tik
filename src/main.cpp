@@ -20,35 +20,14 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 
-	int const nb_joueur;
+	// On commence la personnalisation de la partie avec le nombre de joueurs
+	int nbJoueur;
+	Joueur ListeJoueur[8] = {}; // Initialisation d'une liste de joueurs (8 maximum)
+	std::cout << "Combien de joueurs ? \n";
+	std::cin >> nbJoueur;
 
-	cout << "Quel est le nombre de joueur ?";
-
-	cin >> nb_joueur ;
-
-
-	//Pioche maPioche = Pioche();
-
-	Jeu monJeu[nb_joueur] = Jeu();
-
-	/*
-	std::cout << "Initialisation de la pioche: \n";
-
-	maPioche.initPioche();
-
-	std::cout << maPioche.toString();
-
-	std::cout << "Et maintenant melanger : \n";
-
-	maPioche.melangeCarte();
-
-	std::cout << maPioche.toString();
-	*/
-
-	monJeu.initJeu(nb_joueur);
-
-	std::cout << "Salut Nico, bonne journee a toi et a Pascale. Nathellau!!! \n";
-
+	Jeu monJeu = Jeu(nbJoueur);
+	monJeu.initJeu();
 
 	return 0;
 }

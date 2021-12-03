@@ -41,7 +41,7 @@ public :
 
 	std::string toString();
 
-	void joueurName();
+	void joueurRename();
 
 private :
 
