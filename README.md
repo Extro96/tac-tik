@@ -5,6 +5,7 @@ C'est moi :)
 ## get project
 ```
 mkdir projet
+cd projet
 git clone https://github.com/Extro96/tac-tik.git
 ```
 
