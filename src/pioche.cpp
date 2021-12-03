@@ -20,28 +20,38 @@ Pioche::Pioche() : m_indicePioche(0),restePioche(50 - m_indicePioche) {
 void Pioche::initPioche()
 {
 	int i;
-	int val;
-	int type;
-
+	int val = 1;
+	int type = 0;
 
 	// Creation des cartes avancer de 1 a 12
-	for (i = 0; i<46; i=i+4){
-		type = 0;
-		val = 1;
+	for (i = 0; i<44; i=i+4){
+
 		for (int j = 0; j<4; j++){
-			m_pioche[i+j] = Carte(val, type);
+			m_pioche[j+i] = Carte(val, type);
+			/*
+			std::cout << "m_pioche[";
+			std::cout << i+j;
+			std::cout <<"]  :  ";
+			std::cout << m_pioche[i+j].toString();
+			std::cout <<"\n";
+			*/
 		}
 		val = val + 1;
-		std::cout << i;
+		//std::cout << i;
 	}
 
 	// Cr�ation des cartes permuter
-	for (i = 46; i<50; i=i+4){
+	for (i = 44; i<48; i++){
 		type = 1;
 		val = 0;
-		for (int j = 0; j<4; j++){
-			m_pioche[i+j] = Carte(val, type);
-		}
+		m_pioche[i] = Carte(val, type);
+		/*
+		std::cout << "m_pioche[";
+		std::cout << i;
+		std::cout <<"]  :  ";
+		std::cout << m_pioche[i].toString();
+		std::cout <<"\n";
+*/
 	}
 
 	//Cr�ation des cartes joker

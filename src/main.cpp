@@ -20,10 +20,18 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 
+	int nb_joueur;
 
-	Pioche maPioche = Pioche();
+	cout << "Quel est le nombre de joueur ?";
 
-	std::cout << "Et maintenant melanger : \n";
+	cin >> nb_joueur ;
+
+
+	//Pioche maPioche = Pioche();
+	Jeu monJeu;
+
+	/*
+	std::cout << "Initialisation de la pioche: \n";
 
 	maPioche.initPioche();
 
@@ -34,8 +42,11 @@ int main(int argc, char *argv[]) {
 	maPioche.melangeCarte();
 
 	std::cout << maPioche.toString();
+	*/
 
-	std::cout << "hola";
+	monJeu.initJeu(nb_joueur);
+
+	std::cout << "Salut Nico, bonne journee a toi et a Pascale. Nathellau!!! \n";
 
 
 	return 0;

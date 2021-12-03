@@ -14,15 +14,20 @@
 class Jeu
 {
 public :
+
+	Jeu();
+
 	void initJeu(int nb_joueur);
 
 	void debutTourDeJeu(int nb_joueur, Joueur joueur_actuel, Pioche pioche_cree);
 
 	void echangeCarte(Carte echange_joueur1, Carte echange_joueur2);
 
+	//void nomJoueur(int nb_joueur);
+
 
 private :
-	int tour_de_jeu;
+	int m_tour_de_jeu;
 };
 
 
