@@ -37,7 +37,7 @@ public :
 	void ajouterCarte(Carte d_carte);
 	void retirerCarte(Carte r_carte);
 
-	Carte choixCarte(int carte_choisie);
+	Carte choixCarte(Carte carteChoisie);
 
 private :
 

@@ -7,6 +7,7 @@
 
 #include <time.h>
 
+#include <iostream>
 #include "../inc/pioche.hpp"
 #include "../inc/carte.hpp"
 #include "../inc/joueur.hpp"
@@ -24,17 +25,18 @@ void Pioche::initPioche()
 
 
 	// Creation des cartes avancer de 1 a 12
-	for (i = 0; i<46; i+4){
+	for (i = 0; i<46; i=i+4){
 		type = 0;
 		val = 1;
 		for (int j = 0; j<4; j++){
 			m_pioche[i+j] = Carte(val, type);
 		}
 		val = val + 1;
+		std::cout << i;
 	}
 
 	// Cr�ation des cartes permuter
-	for (i = 46; i<50; i+4){
+	for (i = 46; i<50; i=i+4){
 		type = 1;
 		val = 0;
 		for (int j = 0; j<4; j++){

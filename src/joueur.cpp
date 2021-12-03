@@ -89,6 +89,6 @@ void Joueur::retirerCarte(Carte r_carte){
 
 }
 
-Carte Joueur::choixCarte(int carte_choisie){
-	return carte_choisie;
+Carte Joueur::choixCarte(Carte carteChoisie){
+	return carteChoisie;
 }

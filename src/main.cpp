@@ -21,15 +21,20 @@ using namespace std;
 int main(int argc, char *argv[]) {
 
 
-	Carte maNouvelCarte = Carte(5,1);
+	Pioche maPioche = Pioche();
 
-	Carte deuidme = Carte(5,1);
+	std::cout << "Et maintenant melanger : \n";
 
-	if(maNouvelCarte == deuidme){
-		std::cout << "ca marche";
-	}else{
-		std::cout << "ca marche po";
-	}
+	maPioche.initPioche();
+
+	std::cout << maPioche.toString();
+
+	std::cout << "Et maintenant melanger : \n";
+
+	maPioche.melangeCarte();
+
+	std::cout << maPioche.toString();
+
 	std::cout << "hola";
 
 
