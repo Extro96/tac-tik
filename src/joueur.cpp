@@ -112,10 +112,23 @@ Pion Joueur::getPion(){
 	return m_pion[4];
 }
 
-void Joueur::initPion(){
-	for(int i=0; i<4;i++){
-		m_pion[i] = Pion(m_id * 4 + i + 120); // changer 120 par la valeur de la premiere case
+void Joueur::initPion(int nb_joueur){ // si 2 joueurs ...
+	if (nb_joueur == 2 ){
+		for(int i=0; i<4;i++){
+				if (m_id == 0){
+					m_pion[i] = Pion(m_id * 4 + i + 160); // changer 160 par la valeur de la premiere case de cage
+				}
+				else{
+					m_pion[i] = Pion(m_id * 4 + i + 168); // changer 160 par la valeur de la premiere case de cage
+				}
+			}
 	}
+	else{
+		for(int i=0; i<4;i++){
+			m_pion[i] = Pion(m_id * 4 + i + 160); // changer 160 par la valeur de la premiere case de cage
+		}
+	}
+	
 }
 
 void Joueur::joueurRename(){

@@ -7,7 +7,7 @@
 
 #include "../inc/jeu.hpp"
 #include "../inc/plateau.hpp"
-#include "../inc/Pioche.hpp"
+#include "../inc/pioche.hpp"
 #include "../inc/joueur.hpp"
 
 #include <stdio.h>
@@ -59,13 +59,14 @@ Joueur Jeu::initJoueur(){
 		// choix de la couleur par l'utilisateur
 		std::cout << "Joueur " + std::to_string(i) + " Quel couleur voulez-vous ? \n";
 		std::cin >> couleur;
+
 		//choix du nom de l'utilisateur
 		std::cout << "Quel est votre nom ? \n";
 		std::cin >> name;
-
+//	TODO mettre boucle while
 		//Création du joueur dans la liste
 		ListeJoueur[i] = Joueur(i,couleur,name);
-		ListeJoueur[i].initPion(); // Initialisation des pions du joueurs par rapport à son id (cases de départs)
+		ListeJoueur[i].initPion(m_nbJoueur); // Initialisation des pions du joueurs par rapport à son id (cases de départs)
 	}
 
 	return ListeJoueur[8];

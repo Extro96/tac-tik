@@ -41,7 +41,7 @@ public :
 
 	Pion getPion();
 
-	void initPion();
+	void initPion(int nb_joueur);
 
 	std::string toString();
 
