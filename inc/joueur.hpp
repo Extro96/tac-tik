@@ -23,7 +23,7 @@ public :
 
 	Joueur();
 
-	Joueur(int id, std::string name, int couleur);
+	Joueur(int id, std::string name, Couleur couleur);
 
 	void modifJoueur(Joueur);
 
@@ -53,7 +53,7 @@ public :
 private :
 
 //	int m_couleur; //chaque couleur correspond a un numero
-	int m_couleur_joueur;
+	Couleur m_couleur_joueur;
 	int m_id; // permet de definir l'ordre de passage
 	Pion m_pion[4];
 	Carte m_carte_joueur[4];

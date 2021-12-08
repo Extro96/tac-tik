@@ -24,7 +24,7 @@
 
 using namespace std;
 
-Joueur::Joueur() : m_id(0),m_name("DEFAULT"),m_couleur_joueur(8){
+Joueur::Joueur() : m_id(0),m_name("DEFAULT"){
 
 }
 
@@ -67,7 +67,7 @@ std::string Joueur::toString(){
 */
 
 
-Joueur::Joueur(int id, std::string name, int couleur)
+Joueur::Joueur(int id, std::string name, Couleur couleur)
 {
 	m_id = id; //util ?
 	m_couleur_joueur = couleur;

@@ -99,7 +99,7 @@ Joueur Jeu::initJoueur(){
 		}while(colorus.dispoCouleur(couleur) == false);// verifie si la couleur est dispo
 		//Création du joueur dans la liste
 		//colorus = Couleur(couleur, Couleur().dispoCouleur(couleur));
-		ListeJoueur[i] = Joueur(i,name,colorus.getCouleur());
+		ListeJoueur[i] = Joueur(i,name,colorus);
 		ListeJoueur[i].initPion(m_nbJoueur); // Initialisation des pions du joueurs par rapport à son id (cases de départs)
 	}
 
