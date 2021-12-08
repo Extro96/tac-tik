@@ -50,6 +50,9 @@ std::string Couleur::toString(){
 		case 7:
 			couleur = "orange";
 			break;
+		case 8:
+			couleur = "Pas de couleur";
+			break;
 		default:
 			couleur = "erreur";
 	}

@@ -36,7 +36,10 @@ void Jeu::initJeu()
 	maPioche.melangeCarte();
 	std::cout << maPioche.toString();
 
-	m_listeJoueur[8] = initJoueur(maPioche);	// On initialise les joueurs
+	m_listeJoueur[8] = initJoueur();	// On initialise les joueurs
+
+	// On distribue
+	//m_listeJoueur[8] = distribuJeu(maPioche);
 	
 
 }
@@ -53,7 +56,7 @@ void Jeu::echangeCarte(Carte echange_joueur1, Carte echange_joueur2){
 }
 
 // Permet d'initialiser les joueurs avec leur couleurs et leurs noms
-Joueur Jeu::initJoueur(Pioche pioche){
+Joueur Jeu::initJoueur(){
 	
 	int couleur;
 	std::string name;
@@ -75,7 +78,7 @@ Joueur Jeu::initJoueur(Pioche pioche){
 			}
 			std::cin >> name;
 
-			//TODO pb dans la boucle
+
 			//std::cout << name.size();
 		}while(name.size()>30); //name n'a pas de limite de taille, pas vu dans joueur non plus
 		// choix de la couleur par l'utilisateur
@@ -92,14 +95,21 @@ Joueur Jeu::initJoueur(Pioche pioche){
 				std::cout << "Cette couleur est déjà prise, veuillez en choisir une autre ? \n";
 			}
 			std::cin >> couleur;
+			colorus.setCouleur(couleur);
 		}while(colorus.dispoCouleur(couleur) == false);// verifie si la couleur est dispo
 		//Création du joueur dans la liste
 		//colorus = Couleur(couleur, Couleur().dispoCouleur(couleur));
-		pioche.distribuerCarte(m_nbJoueur, m_listeJoueur[i]);
-		ListeJoueur[i] = Joueur(i,name,couleur);
+		ListeJoueur[i] = Joueur(i,name,colorus.getCouleur());
 		ListeJoueur[i].initPion(m_nbJoueur); // Initialisation des pions du joueurs par rapport à son id (cases de départs)
 	}
 
 	return ListeJoueur[8];
 };
 
+Joueur Jeu::distribuJeu(Pioche pioche){
+	Joueur ListeJoueur[8];
+	for (int i = 0 ; i<m_nbJoueur; i++){
+		pioche.distribuerCarte(m_nbJoueur, ListeJoueur[i]);
+	}
+	return ListeJoueur[8];
+}

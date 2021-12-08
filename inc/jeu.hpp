@@ -24,7 +24,9 @@ public :
 
 	void echangeCarte(Carte echange_joueur1, Carte echange_joueur2);
 
-	Joueur initJoueur(Pioche pioche);
+	Joueur initJoueur();
+
+	Joueur distribuJeu(Pioche pioche);
 
 
 private :

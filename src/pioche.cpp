@@ -88,7 +88,7 @@ void Pioche::distribuerCarte(int nb_joueur, Joueur joueur_actuel)
 
 		//distribue les cartes aux joueurs
 		for (int i = 0; i < 4; i++){
-			joueur_actuel.ajouterCarte(m_pioche[cartepioche]);
+			joueur_actuel.ajouterCarte(m_pioche[cartepioche],i);
 			cartepioche = cartepioche+nb_joueur;
 
 			m_indicePioche++;
@@ -116,7 +116,7 @@ void Pioche::distribuerCarte(int nb_joueur, Joueur joueur_actuel)
 
 		//distribue les cartes aux joueurs
 		for (int i = 0; i < 4; i++){
-			joueur_actuel.ajouterCarte(m_pioche[cartepioche]);
+			joueur_actuel.ajouterCarte(m_pioche[cartepioche],i);
 			cartepioche = cartepioche+nb_joueur;
 
 			m_indicePioche++;

@@ -35,7 +35,7 @@ public :
 	void setId(int id);
 	int getId();
 
-	void ajouterCarte(Carte d_carte);
+	void ajouterCarte(Carte d_carte, int positionCarte);
 	void retirerCarte(Carte r_carte);
 
 	Carte choixCarte(Carte carteChoisie);

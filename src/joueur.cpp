@@ -32,7 +32,7 @@ Joueur::Joueur() : m_id(0),m_name("DEFAULT"),m_couleur_joueur(8){
 std::string Joueur::toString(){
 	std::string couleur ="";
 
-	switch(m_couleur){
+	switch(m_couleur_joueur){
 		case 0:
 			couleur = "bleu";
 			break;
@@ -91,15 +91,17 @@ int Joueur::getCouleur(){
 }
 */
 //recuperer les cartes retournees par distribuer pioche
-void Joueur::ajouterCarte(Carte d_carte){
-	m_carte_joueur[0] = d_carte;
+void Joueur::ajouterCarte(Carte d_carte, int positionCarte){
+	
+	m_carte_joueur[positionCarte] = d_carte;
 	/*
 	for(int i = 2; i>=0 ; i--){
 		m_carte_joueur[i+1] = m_carte_joueur[i];
-	}*/
+	}
 	m_carte_joueur[1] = m_carte_joueur[0];
 	m_carte_joueur[2] = m_carte_joueur[1];
 	m_carte_joueur[3] = m_carte_joueur[2];
+	*/
 }
 
 void Joueur::retirerCarte(Carte r_carte){
