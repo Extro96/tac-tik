@@ -58,24 +58,41 @@ Joueur Jeu::initJoueur(Pioche pioche){
 	int couleur;
 	std::string name;
 	Joueur ListeJoueur[8];
+	Couleur colorus;
 	for(int i=0; i<m_nbJoueur;i++){
 		//choix du nom de l'utilisateur
-		std::cout << "Quel est votre nom ? \n";
-		std::cin >> name;
+		//std::cout << "Quel est votre nom ? \n";
+		//std::cin >> name;
+		int it = 0;
 		do {
-			std::cout << "Quel est votre nom, attention a ne pas mettre un nom trop long ? \n";
+			
+			if (it == 0){
+				std::cout << " Quel est votre nom ? \n";
+				it++;
+			}
+			else{
+				std::cout << "Attention a ne pas mettre un nom trop long, quel nom voulez-vous ? \n";
+			}
 			std::cin >> name;
 
 			//TODO pb dans la boucle
-			std::cout << name.size();
+			//std::cout << name.size();
 		}while(name.size()>30); //name n'a pas de limite de taille, pas vu dans joueur non plus
 		// choix de la couleur par l'utilisateur
-		std::cout << "Joueur " + std::to_string(i) + " Quel couleur voulez-vous ? \n";
-		std::cin >> couleur;
+		std::cout << "Joueur " + std::to_string(i) ;
+		//std::cin >> couleur;
+		it = 0;
 		do {
-			std::cout << "Cette couleur est déjà prise, veuillez en choisir une autre ? \n";
+			
+			if (it == 0){
+				std::cout << " Quel couleur voulez-vous ? \n";
+				it++;
+			}
+			else{
+				std::cout << "Cette couleur est déjà prise, veuillez en choisir une autre ? \n";
+			}
 			std::cin >> couleur;
-		}while(Couleur().dispoCouleur(couleur) == false);// verifie si la couleur est dispo
+		}while(colorus.dispoCouleur(couleur) == false);// verifie si la couleur est dispo
 		//Création du joueur dans la liste
 		//colorus = Couleur(couleur, Couleur().dispoCouleur(couleur));
 		pioche.distribuerCarte(m_nbJoueur, m_listeJoueur[i]);
