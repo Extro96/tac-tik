@@ -24,9 +24,8 @@
 
 using namespace std;
 
-Joueur::Joueur() : m_id(0),m_name("DEFAULT"){
 
-}
+Joueur::Joueur() : m_id(0),m_name("DEFAULT"){}
 
 /*
 std::string Joueur::toString(){
@@ -81,15 +80,17 @@ void Joueur::setId(int id){
 int Joueur::getId(){
 	return m_id;
 }
+
 /*
 void Joueur::setCouleur(int couleur){
 	m_couleur = couleur;
 }
-
-int Joueur::getCouleur(){
-	return m_couleur;
-}
 */
+
+Couleur Joueur::getCouleur(){
+	return m_couleur_joueur;
+}
+
 //recuperer les cartes retournees par distribuer pioche
 void Joueur::ajouterCarte(Carte d_carte, int positionCarte){
 	
@@ -116,8 +117,8 @@ Pion Joueur::getPion(){
 	return m_pion[4];
 }
 
-void Joueur::initPion(int nb_joueur){ // si 2 joueurs ...
-	if (nb_joueur == 2 ){
+void Joueur::initPion(int nb_joueur){ 
+	if (nb_joueur == 2 ){ // si 2 joueurs ...
 		for(int i=0; i<4;i++){
 				if (m_id == 0){
 					m_pion[i] = Pion(m_id * 4 + i + 160); // changer 160 par la valeur de la premiere case de cage
@@ -132,11 +133,9 @@ void Joueur::initPion(int nb_joueur){ // si 2 joueurs ...
 			m_pion[i] = Pion(m_id * 4 + i + 160); // changer 160 par la valeur de la premiere case de cage
 		}
 	}
-	
 }
 
 void Joueur::joueurRename(){
 	cout << "Nom du joueur : \n";
 	cin >> m_name;
-
 }

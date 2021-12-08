@@ -40,7 +40,7 @@ public :
 
 	Carte choixCarte(Carte carteChoisie);
 
-	//Couleur getCouleur();
+	Couleur getCouleur();
 
 	Pion getPion();
 

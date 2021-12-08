@@ -23,12 +23,12 @@ int main(int argc, char *argv[]) {
 	// On commence la personnalisation de la partie avec le nombre de joueurs
 	int nbJoueur;
 	Joueur ListeJoueur[8] = {}; // Initialisation d'une liste de joueurs (8 maximum)
-	int it = 0;
+	bool flag = true; // Défini une variable flag afin d'entrer qu'une seule fois dans une condition au démarrage
 	do{
 		
-		if (it == 0){
+		if (flag){
 			std::cout << " Combien de joueurs pour cette partie ? \n";
-			it++;
+			flag = false; 
 		}
 		else{
 			std::cout << "Attention le nombre doit etre pair et de max 8, combien de joueurs ? \n";
