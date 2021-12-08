@@ -66,30 +66,28 @@ Joueur Jeu::initJoueur(){
 		//choix du nom de l'utilisateur
 		//std::cout << "Quel est votre nom ? \n";
 		//std::cin >> name;
-		int it = 0;
+		bool flag = true;
 		do {
-			
-			if (it == 0){
+			if (flag){
 				std::cout << " Quel est votre nom ? \n";
-				it++;
+				flag = false;
 			}
 			else{
 				std::cout << "Attention a ne pas mettre un nom trop long, quel nom voulez-vous ? \n";
 			}
 			std::cin >> name;
 
-
 			//std::cout << name.size();
 		}while(name.size()>30); //name n'a pas de limite de taille, pas vu dans joueur non plus
+
 		// choix de la couleur par l'utilisateur
 		std::cout << "Joueur " + std::to_string(i) ;
 		//std::cin >> couleur;
-		it = 0;
+		flag = true; // reset du flag pour la prochaine boucle
 		do {
-			
-			if (it == 0){
+			if (flag){
 				std::cout << " Quel couleur voulez-vous ? \n";
-				it++;
+				flag = false;
 			}
 			else{
 				std::cout << "Cette couleur est déjà prise, veuillez en choisir une autre ? \n";
@@ -97,12 +95,12 @@ Joueur Jeu::initJoueur(){
 			std::cin >> couleur;
 			colorus.setCouleur(couleur);
 		}while(colorus.dispoCouleur(couleur) == false);// verifie si la couleur est dispo
+
 		//Création du joueur dans la liste
 		//colorus = Couleur(couleur, Couleur().dispoCouleur(couleur));
-		ListeJoueur[i] = Joueur(i,name,colorus.getCouleur());
+		ListeJoueur[i] = Joueur(i,name,colorus);
 		ListeJoueur[i].initPion(m_nbJoueur); // Initialisation des pions du joueurs par rapport à son id (cases de départs)
 	}
-
 	return ListeJoueur[8];
 };
 
