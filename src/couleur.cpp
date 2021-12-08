@@ -17,9 +17,25 @@
 Couleur::Couleur() : m_couleur(8), m_couleur_string("no color"), m_dispo(true){
 }
 
-Couleur::Couleur(int couleur, bool dispo){
+Couleur::Couleur(int couleur){
 	m_couleur = couleur;
+	m_dispo = true;
+}
+
+bool Couleur::dispoCouleur(){
+    return m_dispo;
+}
+
+void Couleur::setDispo(bool dispo){
 	m_dispo = dispo;
+}
+
+void Couleur::setCouleur(int couleur){
+	m_couleur = couleur;
+}
+	    
+int Couleur::getCouleur(){
+	return m_couleur;
 }
 
 std::string Couleur::toString(){
@@ -57,25 +73,5 @@ std::string Couleur::toString(){
 			couleur = "erreur";
 	}
 
-	std::string retour = "joueur de couleur" + couleur;
-	return retour;
-}
-
-bool Couleur::dispoCouleur(int couleur){
-    m_couleur = couleur;
-    if (m_couleur == (0||1||2||3||4||5||6||7) && m_dispo == true){
-		m_dispo = false;
-        return m_dispo;
-    }
-	else{
-		return m_dispo;
-	}
-}
-
-void Couleur::setCouleur(int couleur){
-	m_couleur = couleur;
-}
-	    
-int Couleur::getCouleur(){
-	return m_couleur;
+	return couleur;
 }

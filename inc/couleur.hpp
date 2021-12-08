@@ -17,15 +17,15 @@ class Couleur{
 public : 
 
     Couleur();
-    Couleur(int couleur, bool dispo);
+    Couleur(int couleur);
 
-    std::string toString();
-    bool dispoCouleur(int couleur);
+    bool dispoCouleur();
+    void setDispo(bool dispo);
 
     void setCouleur(int couleur);
     int getCouleur();
 
-
+    std::string toString();
 
 private : 
     int m_couleur;
