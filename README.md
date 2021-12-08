@@ -10,6 +10,8 @@ react
 npm
 ```
 
+installer nodejs sur wsl : https://docs.microsoft.com/fr-fr/windows/dev-environment/javascript/nodejs-on-wsl
+
 ## get project
 ```
 mkdir projet
