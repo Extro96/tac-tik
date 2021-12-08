@@ -9,6 +9,7 @@
 #include "../inc/plateau.hpp"
 #include "../inc/pioche.hpp"
 #include "../inc/joueur.hpp"
+#include "../inc/couleur.hpp"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -35,7 +36,8 @@ void Jeu::initJeu()
 	maPioche.melangeCarte();
 	std::cout << maPioche.toString();
 
-	m_listeJoueur[8] = initJoueur();	// On initialise les joueurs
+	m_listeJoueur[8] = initJoueur(maPioche);	// On initialise les joueurs
+	
 
 }
 
@@ -51,27 +53,36 @@ void Jeu::echangeCarte(Carte echange_joueur1, Carte echange_joueur2){
 }
 
 // Permet d'initialiser les joueurs avec leur couleurs et leurs noms
-Joueur Jeu::initJoueur(){
+Joueur Jeu::initJoueur(Pioche pioche){
+	
 	int couleur;
 	std::string name;
 	Joueur ListeJoueur[8];
 	for(int i=0; i<m_nbJoueur;i++){
-		// choix de la couleur par l'utilisateur
-		std::cout << "Joueur " + std::to_string(i) + " Quel couleur voulez-vous ? \n";
-		std::cin >> couleur;
-
 		//choix du nom de l'utilisateur
 		std::cout << "Quel est votre nom ? \n";
 		std::cin >> name;
-//	TODO mettre boucle while
+		do {
+			std::cout << "Quel est votre nom, attention a ne pas mettre un nom trop long ? \n";
+			std::cin >> name;
+
+			//TODO pb dans la boucle
+			std::cout << name.size();
+		}while(name.size()>30); //name n'a pas de limite de taille, pas vu dans joueur non plus
+		// choix de la couleur par l'utilisateur
+		std::cout << "Joueur " + std::to_string(i) + " Quel couleur voulez-vous ? \n";
+		std::cin >> couleur;
+		do {
+			std::cout << "Cette couleur est déjà prise, veuillez en choisir une autre ? \n";
+			std::cin >> couleur;
+		}while(Couleur().dispoCouleur(couleur) == false);// verifie si la couleur est dispo
 		//Création du joueur dans la liste
-		ListeJoueur[i] = Joueur(i,couleur,name);
+		//colorus = Couleur(couleur, Couleur().dispoCouleur(couleur));
+		pioche.distribuerCarte(m_nbJoueur, m_listeJoueur[i]);
+		ListeJoueur[i] = Joueur(i,name,couleur);
 		ListeJoueur[i].initPion(m_nbJoueur); // Initialisation des pions du joueurs par rapport à son id (cases de départs)
 	}
 
 	return ListeJoueur[8];
 };
 
-void Jeu::nomJoueur(){
-
-}

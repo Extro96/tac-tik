@@ -1,5 +1,5 @@
 /*
- * initialisation_joueur.h
+ * joueur.hpp
  *
  *  Created on: 18 nov. 2020
  *      Author: lause
@@ -13,6 +13,7 @@
 
 #include "carte.hpp"
 #include "pion.hpp"
+#include "couleur.hpp"
 
 #include <string>
 
@@ -22,14 +23,14 @@ public :
 
 	Joueur();
 
-	Joueur(int id, int couleur, std::string name);
+	Joueur(int id, std::string name, int couleur);
 
 	void modifJoueur(Joueur);
 
 	int recupId();
 
-	void setCouleur(int couleur);
-	int getCouleur();
+	//void setCouleur(int couleur);
+	//int getCouleur();
 
 	void setId(int id);
 	int getId();
@@ -39,17 +40,20 @@ public :
 
 	Carte choixCarte(Carte carteChoisie);
 
+	//Couleur getCouleur();
+
 	Pion getPion();
 
 	void initPion(int nb_joueur);
 
-	std::string toString();
+	//std::string toString();
 
 	void joueurRename();
 
 private :
 
-	int m_couleur; //chaque couleur correspond a un numero
+//	int m_couleur; //chaque couleur correspond a un numero
+	int m_couleur_joueur;
 	int m_id; // permet de definir l'ordre de passage
 	Pion m_pion[4];
 	Carte m_carte_joueur[4];

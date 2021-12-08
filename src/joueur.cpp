@@ -1,5 +1,5 @@
 /*
- * initialisation_joueur.cpp
+ * joueur.cpp
  *
  * Les fonctions pr�sentent dans cette partie permettent d'initialiser joueur
  * Joueur est consitu� :
@@ -15,6 +15,7 @@
 
 #include "../inc/joueur.hpp"
 #include "../inc/carte.hpp"
+#include "../inc/couleur.hpp"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,10 +24,11 @@
 
 using namespace std;
 
-Joueur::Joueur() : m_id(0),m_couleur(0),m_name("DEFAULT"){
+Joueur::Joueur() : m_id(0),m_name("DEFAULT"),m_couleur_joueur(8){
 
 }
 
+/*
 std::string Joueur::toString(){
 	std::string couleur ="";
 
@@ -56,19 +58,19 @@ std::string Joueur::toString(){
 			couleur = "orange";
 			break;
 		default:
-			couleur = "erreur";
+			couleur = "Pas de couleur definie";
 	}
 
 	std::string retour = "joueur de couleur" + couleur;
 	return retour;
 }
+*/
 
 
-
-Joueur::Joueur(int id, int couleur, std::string name)
+Joueur::Joueur(int id, std::string name, int couleur)
 {
 	m_id = id; //util ?
-	m_couleur = couleur;
+	m_couleur_joueur = couleur;
 	m_name = name;
 }
 
@@ -79,7 +81,7 @@ void Joueur::setId(int id){
 int Joueur::getId(){
 	return m_id;
 }
-
+/*
 void Joueur::setCouleur(int couleur){
 	m_couleur = couleur;
 }
@@ -87,7 +89,7 @@ void Joueur::setCouleur(int couleur){
 int Joueur::getCouleur(){
 	return m_couleur;
 }
-
+*/
 //recuperer les cartes retournees par distribuer pioche
 void Joueur::ajouterCarte(Carte d_carte){
 	m_carte_joueur[0] = d_carte;

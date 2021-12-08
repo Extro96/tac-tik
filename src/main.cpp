@@ -25,6 +25,10 @@ int main(int argc, char *argv[]) {
 	Joueur ListeJoueur[8] = {}; // Initialisation d'une liste de joueurs (8 maximum)
 	std::cout << "Combien de joueurs ? \n";
 	std::cin >> nbJoueur;
+	do{
+		std::cout << "Combien de joueurs ? Attention le nombre doit etre pair et de max 8 \n";
+		std::cin >> nbJoueur;
+	}while((nbJoueur%2)!=0 || nbJoueur>8);
 
 	// On créer une instance de Jeu() limité à nbJoueur et on l'initialise avec ses joueurs.
 	Jeu monJeu = Jeu(nbJoueur);

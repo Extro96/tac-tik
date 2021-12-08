@@ -11,6 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Create a sources variable with a link to all cpp files to compile
 set(SOURCES
     src/carte.cpp
+    src/couleur.cpp
     src/joueur.cpp
     src/pion.cpp
     src/pioche.cpp
