@@ -90,11 +90,3 @@ bool Couleur::dispoCouleur(int couleur){
 	
  
 }*/
-
-void Couleur::setCouleur(int couleur){
-	m_couleur = couleur;
-}
-	    
-int Couleur::getCouleur(){
-	return m_couleur;
-}
