@@ -2,6 +2,16 @@
 Projet de tac-tik en c++ avec la plus bonne bonne de mes copines, Laulau !
 C'est moi :)
 
+## Prérequis
+```
+Cmake
+nodeJS
+react
+npm
+```
+
+installer nodejs sur wsl : https://docs.microsoft.com/fr-fr/windows/dev-environment/javascript/nodejs-on-wsl
+
 ## get project
 ```
 mkdir projet
