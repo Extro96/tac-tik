@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TCS40DPR,LF
+D Board Mount Hall Effect / Magnetic Sensors Magnetic Sensor Push Pull Dual Detection
+K
+F http://toshiba.semicon-storage.com/info/docget.jsp?did=30107&prodName=TCS40DPR
+$ENDCMP
+#
+#End Doc Library

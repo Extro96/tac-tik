@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 24LC16BHT-I_OT
+D Microchip 24LC16BHT-I/OT EEPROM Memory, 16kb, 900ns, 2.5  5.5 V SOT-23 5-Pin
+K
+F http://ww1.microchip.com/downloads/en/DeviceDoc/22118A.pdf
+$ENDCMP
+#
+#End Doc Library
