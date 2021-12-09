@@ -60,17 +60,20 @@ std::string Couleur::toString(){
 	std::string retour = "joueur de couleur" + couleur;
 	return retour;
 }
-
+/*
 bool Couleur::dispoCouleur(int couleur){
     m_couleur = couleur;
-    if (m_couleur == (0||1||2||3||4||5||6||7) && m_dispo == true){
+	
+	if (couleur == true){
 		m_dispo = false;
-        return m_dispo;
-    }
+		return m_dispo;
+	}
 	else{
 		return m_dispo;
 	}
-}
+	
+ 
+}*/
 
 void Couleur::setCouleur(int couleur){
 	m_couleur = couleur;

@@ -31,6 +31,7 @@ private :
     int m_couleur;
     std::string m_couleur_string; 
     bool m_dispo;
+    
 };
 
 #endif /* COULEUR_HPP_ */

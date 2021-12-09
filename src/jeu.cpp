@@ -67,6 +67,7 @@ Joueur Jeu::initJoueur(){
 		//std::cout << "Quel est votre nom ? \n";
 		//std::cin >> name;
 		bool flag = true;
+		bool dispoCouleurListe = true;
 		do {
 			if (flag){
 				std::cout << " Quel est votre nom ? \n";
@@ -84,17 +85,28 @@ Joueur Jeu::initJoueur(){
 		std::cout << "Joueur " + std::to_string(i) ;
 		//std::cin >> couleur;
 		flag = true; // reset du flag pour la prochaine boucle
+		
 		do {
-			if (flag){
+			if (flag == true){
 				std::cout << " Quel couleur voulez-vous ? \n";
 				flag = false;
 			}
 			else{
-				std::cout << "Cette couleur est déjà prise, veuillez en choisir une autre ? \n";
+				if ((couleur<0||couleur>8)){
+					std::cout << "Veuillez choisir une valeur comprise entre 0 et 7 : \n";
+				}
+				if (dispoCouleurListe == false ){
+					std::cout << "Cette couleur est déjà prise, veuillez en choisir une autre ? \n";
+				}
 			}
 			std::cin >> couleur;
 			colorus.setCouleur(couleur);
-		}while(colorus.dispoCouleur(couleur) == false);// verifie si la couleur est dispo
+			for (int j = 0; j=i ; j++){
+				if(couleur == ListeJoueur[i].getCouleur()){
+					dispoCouleurListe = false;
+				}
+			}
+		}while(dispoCouleurListe == false || (couleur<0||couleur>8));// verifie si la couleur est dispo
 
 		//Création du joueur dans la liste
 		//colorus = Couleur(couleur, Couleur().dispoCouleur(couleur));
