@@ -17,9 +17,25 @@
 Couleur::Couleur() : m_couleur(8), m_couleur_string("no color"), m_dispo(true){
 }
 
-Couleur::Couleur(int couleur, bool dispo){
+Couleur::Couleur(int couleur){
 	m_couleur = couleur;
+	m_dispo = true;
+}
+
+bool Couleur::dispoCouleur(){
+    return m_dispo;
+}
+
+void Couleur::setDispo(bool dispo){
 	m_dispo = dispo;
+}
+
+void Couleur::setCouleur(int couleur){
+	m_couleur = couleur;
+}
+	    
+int Couleur::getCouleur(){
+	return m_couleur;
 }
 
 std::string Couleur::toString(){
