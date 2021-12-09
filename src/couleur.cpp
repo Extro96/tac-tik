@@ -73,28 +73,5 @@ std::string Couleur::toString(){
 			couleur = "erreur";
 	}
 
-	std::string retour = "joueur de couleur" + couleur;
-	return retour;
-}
-/*
-bool Couleur::dispoCouleur(int couleur){
-    m_couleur = couleur;
-	
-	if (couleur == true){
-		m_dispo = false;
-		return m_dispo;
-	}
-	else{
-		return m_dispo;
-	}
-	
- 
-}*/
-
-void Couleur::setCouleur(int couleur){
-	m_couleur = couleur;
-}
-	    
-int Couleur::getCouleur(){
-	return m_couleur;
+	return couleur;
 }
