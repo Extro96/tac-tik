@@ -48,7 +48,7 @@ void Jeu::debutTourDeJeu(int nb_joueur, Joueur joueur_actuel, Pioche pioche_cree
 	pioche_cree.distribuerCarte(nb_joueur, joueur_actuel);
 }
 
-void Jeu::echangeCarte(Carte echange_joueur1, Carte echange_joueur2){
+void Jeu::echangeCarte(Carte echange_joueur1, Carte echange_joueur2){ // TODO a revoir, ça ne marche pas. Il n'y a aucune interaction avec les objets joueur.
 		Carte temp;
 		temp = echange_joueur1;
 		echange_joueur1 = echange_joueur2;
