@@ -39,8 +39,7 @@ void Jeu::initJeu()
 	m_listeJoueur[8] = initJoueur();	// On initialise les joueurs
 
 	// On distribue
-	//m_listeJoueur[8] = distribuJeu(maPioche);
-	
+	m_listeJoueur[8] = distribuJeu(maPioche);
 
 }
 
@@ -108,9 +107,6 @@ Joueur Jeu::distribuJeu(Pioche pioche){
 	}
 	return ListeJoueur[8];
 }
-
-
-
 /*
  * jeu.cpp
  *
