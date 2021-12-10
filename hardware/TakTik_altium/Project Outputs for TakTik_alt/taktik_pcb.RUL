@@ -1,0 +1,5 @@
+DRC Rules Export File for PCB: C:\Users\lause\OneDrive\Documents\Avec_Nicolas_on_fait_des_trucs_sympa\tac-tik\hardware\TakTik_altium\taktik_pcb.PcbDoc
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

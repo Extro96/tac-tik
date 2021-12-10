@@ -1,0 +1,18 @@
+Change Component Footprint: Designator=J1 Old Footprint=RHDR15W40P0X127_1X15_1945X250X475P New Footprint=PRT16279
+Change Component Footprint: Designator=J2 Old Footprint=RHDR15W40P0X127_1X15_1945X250X475P New Footprint=PRT16279
+Change Component Comment : Designator=J1 Old Comment=M52-5001545 New Comment=PRT-16279
+Change Component Comment : Designator=J2 Old Comment=M52-5001545 New Comment=PRT-16279
+Change component parameters: Designator = "J1" ("J1"); Footprint = "RHDR15W40P0X127_1X15_1945X250X475P"; UniqueID = "\NGFGQDOI" ("\NGFGQDOI")
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://cdn.sparkfun.com/assets/8/d/8/4/7/DS-16279-Arduino_Nano_Stackable_Header_Kit.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "8.65mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "SparkFun"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "PRT-16279"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "J2" ("J2"); Footprint = "RHDR15W40P0X127_1X15_1945X250X475P"; UniqueID = "\VKJCOYTG" ("\VKJCOYTG")
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://cdn.sparkfun.com/assets/8/d/8/4/7/DS-16279-Arduino_Nano_Stackable_Header_Kit.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "8.65mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "SparkFun"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "PRT-16279"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"

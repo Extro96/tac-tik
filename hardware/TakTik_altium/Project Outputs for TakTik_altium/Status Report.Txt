@@ -1,0 +1,10 @@
+Output: Telesis Netlist
+Type  : TelesisNetlist
+From  : Project [TakTik_altium.PrjPcb]
+   Generated File[taktik.NET]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 17:03:30 On 09/12/2021

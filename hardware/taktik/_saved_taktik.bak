@@ -1,0 +1,836 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TCS40DPR_LF:TCS40DPR,LF IC1
+U 1 1 61B1DB7A
+P 5350 3900
+F 0 "IC1" H 5900 4165 50  0000 C CNN
+F 1 "TCS40DPR,LF" H 5900 4074 50  0000 C CNN
+F 2 "SOTFL95P240X88-3N" H 6300 4000 50  0001 L CNN
+F 3 "http://toshiba.semicon-storage.com/info/docget.jsp?did=30107&prodName=TCS40DPR" H 6300 3900 50  0001 L CNN
+F 4 "Board Mount Hall Effect / Magnetic Sensors Magnetic Sensor Push Pull Dual Detection" H 6300 3800 50  0001 L CNN "Description"
+F 5 "0.88" H 6300 3700 50  0001 L CNN "Height"
+F 6 "Toshiba" H 6300 3600 50  0001 L CNN "Manufacturer_Name"
+F 7 "TCS40DPR,LF" H 6300 3500 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "757-TCS40DPRLF" H 6300 3400 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Toshiba/TCS40DPRLF?qs=GSXfdiLIrOHqR%252B5sANTKJA%3D%3D" H 6300 3300 50  0001 L CNN "Mouser Price/Stock"
+F 10 "TCS40DPR,LF" H 6300 3200 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/tcs40dprlf/toshiba?region=nac" H 6300 3100 50  0001 L CNN "Arrow Price/Stock"
+	1    5350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x15 J2
+U 1 1 61B1E1C6
+P 3050 6200
+F 0 "J2" H 3130 6242 50  0000 L CNN
+F 1 "Conn_01x15" H 3130 6151 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 3050 6200 50  0001 C CNN
+F 3 "~" H 3050 6200 50  0001 C CNN
+	1    3050 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x15 J1
+U 1 1 61B1E230
+P 1900 6200
+F 0 "J1" H 1980 6242 50  0000 L CNN
+F 1 "Conn_01x15" H 1980 6151 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 1900 6200 50  0001 C CNN
+F 3 "~" H 1900 6200 50  0001 C CNN
+	1    1900 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 61B29123
+P 1600 6800
+F 0 "#PWR05" H 1600 6550 50  0001 C CNN
+F 1 "GND" H 1605 6627 50  0000 C CNN
+F 2 "" H 1600 6800 50  0001 C CNN
+F 3 "" H 1600 6800 50  0001 C CNN
+	1    1600 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 6800 1600 6800
+$Comp
+L power:GND #PWR04
+U 1 1 61B29160
+P 1600 6400
+F 0 "#PWR04" H 1600 6150 50  0001 C CNN
+F 1 "GND" H 1605 6227 50  0000 C CNN
+F 2 "" H 1600 6400 50  0001 C CNN
+F 3 "" H 1600 6400 50  0001 C CNN
+	1    1600 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 6400 1600 6400
+$Comp
+L power:GND #PWR09
+U 1 1 61B291D3
+P 2750 6800
+F 0 "#PWR09" H 2750 6550 50  0001 C CNN
+F 1 "GND" H 2755 6627 50  0000 C CNN
+F 2 "" H 2750 6800 50  0001 C CNN
+F 3 "" H 2750 6800 50  0001 C CNN
+	1    2750 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 6800 2750 6800
+$Comp
+L power:GND #PWR08
+U 1 1 61B29215
+P 2750 6100
+F 0 "#PWR08" H 2750 5850 50  0001 C CNN
+F 1 "GND" H 2755 5927 50  0000 C CNN
+F 2 "" H 2750 6100 50  0001 C CNN
+F 3 "" H 2750 6100 50  0001 C CNN
+	1    2750 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 6100 2750 6100
+$Comp
+L B2B-XH-A_LF__SN_:B2B-XH-A(LF)(SN) J3
+U 1 1 61B29944
+P 10000 5850
+F 0 "J3" H 10230 5846 50  0000 L CNN
+F 1 "B2B-XH-A(LF)(SN)" H 10230 5755 50  0000 L CNN
+F 2 "JST_B2B-XH-A(LF)(SN)" H 10000 5850 50  0001 L BNN
+F 3 "" H 10000 5850 50  0001 L BNN
+F 4 "JST Sales" H 10000 5850 50  0001 L BNN "MF"
+F 5 "Connector Header Through Hole 2 position 0.098 (2.50mm)" H 10000 5850 50  0001 L BNN "DESCRIPTION"
+F 6 "None" H 10000 5850 50  0001 L BNN "PRICE"
+F 7 "B2B-XH-A(LF)(SN)" H 10000 5850 50  0001 L BNN "MP"
+F 8 "In Stock" H 10000 5850 50  0001 L BNN "AVAILABILITY"
+F 9 "None" H 10000 5850 50  0001 L BNN "PACKAGE"
+	1    10000 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 61B299F9
+P 9350 6050
+F 0 "#PWR021" H 9350 5800 50  0001 C CNN
+F 1 "GND" H 9355 5877 50  0000 C CNN
+F 2 "" H 9350 6050 50  0001 C CNN
+F 3 "" H 9350 6050 50  0001 C CNN
+	1    9350 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 5950 9350 5950
+Wire Wire Line
+	9350 5950 9350 6050
+Wire Wire Line
+	9350 5850 9600 5850
+Text Label 9350 5850 0    50   ~ 0
+5V
+$Comp
+L L7805CV:L7805CV IC2
+U 1 1 61B29FB5
+P 9750 4650
+F 0 "IC2" H 10577 4596 50  0000 L CNN
+F 1 "L7805CV" H 10577 4505 50  0000 L CNN
+F 2 "TO255P460X1020X2008-3P" H 10600 4750 50  0001 L CNN
+F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00000444.pdf" H 10600 4650 50  0001 L CNN
+F 4 "Linear voltage regulator,L7805CV 5V 1.5A STMicroelectronics L7805CV, Single Linear Voltage Regulator, 1.5A 5 V, 3-Pin TO-220" H 10600 4550 50  0001 L CNN "Description"
+F 5 "4.6" H 10600 4450 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 10600 4350 50  0001 L CNN "Manufacturer_Name"
+F 7 "L7805CV" H 10600 4250 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-L7805CV" H 10600 4150 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/L7805CV?qs=9NrABl3fj%2FqplZAHiYUxWg%3D%3D" H 10600 4050 50  0001 L CNN "Mouser Price/Stock"
+F 10 "L7805CV" H 10600 3950 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/l7805cv/stmicroelectronics" H 10600 3850 50  0001 L CNN "Arrow Price/Stock"
+	1    9750 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 61B2A28F
+P 8650 5000
+F 0 "C8" H 8742 5046 50  0000 L CNN
+F 1 "0.33uF" H 8742 4955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D6.0mm_P15.00mm_Horizontal" H 8650 5000 50  0001 C CNN
+F 3 "~" H 8650 5000 50  0001 C CNN
+	1    8650 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 61B2A2E1
+P 9150 5000
+F 0 "C9" H 9242 5046 50  0000 L CNN
+F 1 "0.1uF" H 9242 4955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D6.0mm_P15.00mm_Horizontal" H 9150 5000 50  0001 C CNN
+F 3 "~" H 9150 5000 50  0001 C CNN
+	1    9150 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 61B2A719
+P 9500 5150
+F 0 "#PWR022" H 9500 4900 50  0001 C CNN
+F 1 "GND" H 9505 4977 50  0000 C CNN
+F 2 "" H 9500 5150 50  0001 C CNN
+F 3 "" H 9500 5150 50  0001 C CNN
+	1    9500 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 4650 8650 4650
+Wire Wire Line
+	8650 4650 8650 4900
+Wire Wire Line
+	8650 5100 8650 5150
+Wire Wire Line
+	8650 5150 9150 5150
+Wire Wire Line
+	9600 5150 9600 4750
+Wire Wire Line
+	9600 4750 9750 4750
+Connection ~ 9500 5150
+Wire Wire Line
+	9500 5150 9600 5150
+Wire Wire Line
+	9750 4850 9150 4850
+Wire Wire Line
+	9150 4850 9150 4900
+Wire Wire Line
+	9150 5100 9150 5150
+Connection ~ 9150 5150
+Wire Wire Line
+	9150 5150 9500 5150
+Text Label 8700 4650 0    50   ~ 0
+5V
+Text Label 9250 4850 0    50   ~ 0
+P5V
+Wire Wire Line
+	1150 6500 1700 6500
+Text Label 1150 6500 0    50   ~ 0
+3V3
+Wire Wire Line
+	1700 6900 1450 6900
+Text Label 1150 6900 0    50   ~ 0
+P5V
+Wire Wire Line
+	2300 6000 2850 6000
+Text Label 2300 6000 0    50   ~ 0
+3V3
+Wire Wire Line
+	2300 6900 2850 6900
+Text Label 2300 6900 0    50   ~ 0
+3V3
+Wire Wire Line
+	2850 5600 2300 5600
+Wire Wire Line
+	2850 5700 2300 5700
+Text Label 2300 5600 0    50   ~ 0
+RX_MAG
+Text Label 2300 5700 0    50   ~ 0
+RX_LED
+NoConn ~ 1700 5500
+NoConn ~ 1700 5600
+NoConn ~ 1700 5700
+NoConn ~ 1700 5800
+NoConn ~ 1700 5900
+NoConn ~ 1700 6000
+NoConn ~ 1700 6100
+NoConn ~ 1700 6200
+NoConn ~ 1700 6300
+NoConn ~ 1700 6600
+NoConn ~ 1700 6700
+NoConn ~ 2850 5500
+NoConn ~ 2850 5900
+NoConn ~ 2850 6200
+NoConn ~ 2850 6300
+NoConn ~ 2850 6400
+NoConn ~ 2850 6500
+NoConn ~ 2850 6600
+NoConn ~ 2850 6700
+$Comp
+L IN-PI554FCH:IN-PI554FCH LED2
+U 1 1 61B33093
+P 3100 1550
+F 0 "LED2" H 3600 1815 50  0000 C CNN
+F 1 "IN-PI554FCH" H 3600 1724 50  0000 C CNN
+F 2 "INPI554FCH" H 3950 1650 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/180/IN-PI554FCH-1488538.pdf" H 3950 1550 50  0001 L CNN
+F 4 "Standard LEDs - SMD RGB Digital LED" H 3950 1450 50  0001 L CNN "Description"
+F 5 "1.6" H 3950 1350 50  0001 L CNN "Height"
+F 6 "Inolux" H 3950 1250 50  0001 L CNN "Manufacturer_Name"
+F 7 "IN-PI554FCH" H 3950 1150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "743-IN-PI554FCH" H 3950 1050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Inolux/IN-PI554FCH?qs=fAHHVMwC%252BbilHshFvT0Xwg%3D%3D" H 3950 950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "IN-PI554FCH" H 3950 850 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/in-pi554fch/inolux-corporation?region=nac" H 3950 750 50  0001 L CNN "Arrow Price/Stock"
+	1    3100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L IN-PI554FCH:IN-PI554FCH LED3
+U 1 1 61B333EB
+P 4650 1550
+F 0 "LED3" H 5150 1815 50  0000 C CNN
+F 1 "IN-PI554FCH" H 5150 1724 50  0000 C CNN
+F 2 "INPI554FCH" H 5500 1650 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/180/IN-PI554FCH-1488538.pdf" H 5500 1550 50  0001 L CNN
+F 4 "Standard LEDs - SMD RGB Digital LED" H 5500 1450 50  0001 L CNN "Description"
+F 5 "1.6" H 5500 1350 50  0001 L CNN "Height"
+F 6 "Inolux" H 5500 1250 50  0001 L CNN "Manufacturer_Name"
+F 7 "IN-PI554FCH" H 5500 1150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "743-IN-PI554FCH" H 5500 1050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Inolux/IN-PI554FCH?qs=fAHHVMwC%252BbilHshFvT0Xwg%3D%3D" H 5500 950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "IN-PI554FCH" H 5500 850 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/in-pi554fch/inolux-corporation?region=nac" H 5500 750 50  0001 L CNN "Arrow Price/Stock"
+	1    4650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L IN-PI554FCH:IN-PI554FCH LED4
+U 1 1 61B33772
+P 6200 1550
+F 0 "LED4" H 6700 1815 50  0000 C CNN
+F 1 "IN-PI554FCH" H 6700 1724 50  0000 C CNN
+F 2 "INPI554FCH" H 7050 1650 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/180/IN-PI554FCH-1488538.pdf" H 7050 1550 50  0001 L CNN
+F 4 "Standard LEDs - SMD RGB Digital LED" H 7050 1450 50  0001 L CNN "Description"
+F 5 "1.6" H 7050 1350 50  0001 L CNN "Height"
+F 6 "Inolux" H 7050 1250 50  0001 L CNN "Manufacturer_Name"
+F 7 "IN-PI554FCH" H 7050 1150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "743-IN-PI554FCH" H 7050 1050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Inolux/IN-PI554FCH?qs=fAHHVMwC%252BbilHshFvT0Xwg%3D%3D" H 7050 950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "IN-PI554FCH" H 7050 850 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/in-pi554fch/inolux-corporation?region=nac" H 7050 750 50  0001 L CNN "Arrow Price/Stock"
+	1    6200 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L IN-PI554FCH:IN-PI554FCH LED5
+U 1 1 61B35313
+P 7650 1550
+F 0 "LED5" H 8150 1815 50  0000 C CNN
+F 1 "IN-PI554FCH" H 8150 1724 50  0000 C CNN
+F 2 "INPI554FCH" H 8500 1650 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/180/IN-PI554FCH-1488538.pdf" H 8500 1550 50  0001 L CNN
+F 4 "Standard LEDs - SMD RGB Digital LED" H 8500 1450 50  0001 L CNN "Description"
+F 5 "1.6" H 8500 1350 50  0001 L CNN "Height"
+F 6 "Inolux" H 8500 1250 50  0001 L CNN "Manufacturer_Name"
+F 7 "IN-PI554FCH" H 8500 1150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "743-IN-PI554FCH" H 8500 1050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Inolux/IN-PI554FCH?qs=fAHHVMwC%252BbilHshFvT0Xwg%3D%3D" H 8500 950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "IN-PI554FCH" H 8500 850 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/in-pi554fch/inolux-corporation?region=nac" H 8500 750 50  0001 L CNN "Arrow Price/Stock"
+	1    7650 1550
+	1    0    0    -1  
+$EndComp
+Text Label 1450 1550 0    50   ~ 0
+P5V
+$Comp
+L IN-PI554FCH:IN-PI554FCH LED1
+U 1 1 61B1DA42
+P 1650 1550
+F 0 "LED1" H 2150 1815 50  0000 C CNN
+F 1 "IN-PI554FCH" H 2150 1724 50  0000 C CNN
+F 2 "INPI554FCH" H 2500 1650 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/180/IN-PI554FCH-1488538.pdf" H 2500 1550 50  0001 L CNN
+F 4 "Standard LEDs - SMD RGB Digital LED" H 2500 1450 50  0001 L CNN "Description"
+F 5 "1.6" H 2500 1350 50  0001 L CNN "Height"
+F 6 "Inolux" H 2500 1250 50  0001 L CNN "Manufacturer_Name"
+F 7 "IN-PI554FCH" H 2500 1150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "743-IN-PI554FCH" H 2500 1050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Inolux/IN-PI554FCH?qs=fAHHVMwC%252BbilHshFvT0Xwg%3D%3D" H 2500 950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "IN-PI554FCH" H 2500 850 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/in-pi554fch/inolux-corporation?region=nac" H 2500 750 50  0001 L CNN "Arrow Price/Stock"
+	1    1650 1550
+	1    0    0    -1  
+$EndComp
+Text Label 2950 1550 0    50   ~ 0
+P5V
+Wire Wire Line
+	3100 1550 3050 1550
+Text Label 4500 1550 0    50   ~ 0
+P5V
+Wire Wire Line
+	4650 1550 4600 1550
+Text Label 6050 1550 0    50   ~ 0
+P5V
+Wire Wire Line
+	6200 1550 6150 1550
+Text Label 7500 1550 0    50   ~ 0
+P5V
+Wire Wire Line
+	7650 1550 7600 1550
+$Comp
+L power:GND #PWR07
+U 1 1 61B3AA54
+P 2700 1700
+F 0 "#PWR07" H 2700 1450 50  0001 C CNN
+F 1 "GND" H 2705 1527 50  0000 C CNN
+F 2 "" H 2700 1700 50  0001 C CNN
+F 3 "" H 2700 1700 50  0001 C CNN
+	1    2700 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1650 2700 1650
+Wire Wire Line
+	2700 1650 2700 1700
+$Comp
+L power:GND #PWR011
+U 1 1 61B3BDCA
+P 4150 1700
+F 0 "#PWR011" H 4150 1450 50  0001 C CNN
+F 1 "GND" H 4155 1527 50  0000 C CNN
+F 2 "" H 4150 1700 50  0001 C CNN
+F 3 "" H 4150 1700 50  0001 C CNN
+	1    4150 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1650 4150 1650
+Wire Wire Line
+	4150 1650 4150 1700
+$Comp
+L power:GND #PWR015
+U 1 1 61B3C70D
+P 5700 1700
+F 0 "#PWR015" H 5700 1450 50  0001 C CNN
+F 1 "GND" H 5705 1527 50  0000 C CNN
+F 2 "" H 5700 1700 50  0001 C CNN
+F 3 "" H 5700 1700 50  0001 C CNN
+	1    5700 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1650 5700 1650
+Wire Wire Line
+	5700 1650 5700 1700
+$Comp
+L power:GND #PWR018
+U 1 1 61B3CDA7
+P 7250 1700
+F 0 "#PWR018" H 7250 1450 50  0001 C CNN
+F 1 "GND" H 7255 1527 50  0000 C CNN
+F 2 "" H 7250 1700 50  0001 C CNN
+F 3 "" H 7250 1700 50  0001 C CNN
+	1    7250 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1650 7250 1650
+Wire Wire Line
+	7250 1650 7250 1700
+$Comp
+L power:GND #PWR020
+U 1 1 61B3D753
+P 8700 1700
+F 0 "#PWR020" H 8700 1450 50  0001 C CNN
+F 1 "GND" H 8705 1527 50  0000 C CNN
+F 2 "" H 8700 1700 50  0001 C CNN
+F 3 "" H 8700 1700 50  0001 C CNN
+	1    8700 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 1650 8700 1650
+Wire Wire Line
+	8700 1650 8700 1700
+Wire Wire Line
+	8750 1550 8650 1550
+Text Label 8750 1550 0    50   ~ 0
+RX_LED
+Wire Wire Line
+	7650 1650 7350 1650
+Wire Wire Line
+	7350 1650 7350 1550
+Wire Wire Line
+	7350 1550 7200 1550
+Wire Wire Line
+	6200 1650 5850 1650
+Wire Wire Line
+	5850 1650 5850 1550
+Wire Wire Line
+	5850 1550 5650 1550
+Wire Wire Line
+	4650 1650 4250 1650
+Wire Wire Line
+	4250 1650 4250 1550
+Wire Wire Line
+	4250 1550 4100 1550
+Wire Wire Line
+	3100 1650 2800 1650
+Wire Wire Line
+	2800 1650 2800 1550
+Wire Wire Line
+	2800 1550 2650 1550
+$Comp
+L Device:R R3
+U 1 1 61B42A47
+P 1250 1850
+F 0 "R3" H 1320 1896 50  0000 L CNN
+F 1 "NC (0R)" H 1320 1805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1180 1850 50  0001 C CNN
+F 3 "~" H 1250 1850 50  0001 C CNN
+	1    1250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61B42B2E
+P 1000 1650
+F 0 "R2" V 793 1650 50  0000 C CNN
+F 1 "NC (0R)" V 884 1650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 930 1650 50  0001 C CNN
+F 3 "~" H 1000 1650 50  0001 C CNN
+	1    1000 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 1700 1250 1650
+Connection ~ 1250 1650
+Wire Wire Line
+	1250 1650 1150 1650
+Wire Wire Line
+	1250 2050 1250 2000
+$Comp
+L power:GND #PWR02
+U 1 1 61B4A4B0
+P 1250 2050
+F 0 "#PWR02" H 1250 1800 50  0001 C CNN
+F 1 "GND" H 1255 1877 50  0000 C CNN
+F 2 "" H 1250 2050 50  0001 C CNN
+F 3 "" H 1250 2050 50  0001 C CNN
+	1    1250 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  1650 800  1650
+Text Label 650  1650 0    50   ~ 0
+TX_LED
+Wire Wire Line
+	2850 5800 2300 5800
+Text Label 2300 5800 0    50   ~ 0
+TX_LED
+$Comp
+L Device:C_Small C2
+U 1 1 61B4E734
+P 1650 2150
+F 0 "C2" H 1742 2196 50  0000 L CNN
+F 1 "0.1uF" H 1742 2105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D6.0mm_P15.00mm_Horizontal" H 1650 2150 50  0001 C CNN
+F 3 "~" H 1650 2150 50  0001 C CNN
+	1    1650 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2300 1650 2250
+$Comp
+L power:GND #PWR06
+U 1 1 61B50D9B
+P 1650 2300
+F 0 "#PWR06" H 1650 2050 50  0001 C CNN
+F 1 "GND" H 1655 2127 50  0000 C CNN
+F 2 "" H 1650 2300 50  0001 C CNN
+F 3 "" H 1650 2300 50  0001 C CNN
+	1    1650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 61B55CDE
+P 1450 7100
+F 0 "C1" H 1542 7146 50  0000 L CNN
+F 1 "0.1uF" H 1542 7055 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D6.0mm_P15.00mm_Horizontal" H 1450 7100 50  0001 C CNN
+F 3 "~" H 1450 7100 50  0001 C CNN
+	1    1450 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 7250 1450 7200
+$Comp
+L power:GND #PWR03
+U 1 1 61B55CE7
+P 1450 7250
+F 0 "#PWR03" H 1450 7000 50  0001 C CNN
+F 1 "GND" H 1455 7077 50  0000 C CNN
+F 2 "" H 1450 7250 50  0001 C CNN
+F 3 "" H 1450 7250 50  0001 C CNN
+	1    1450 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 6900 1450 7000
+Connection ~ 1450 6900
+Wire Wire Line
+	1450 6900 1150 6900
+Wire Wire Line
+	1250 1650 1650 1650
+Wire Wire Line
+	1450 1550 1600 1550
+Wire Wire Line
+	1600 1550 1600 1900
+Wire Wire Line
+	1600 1900 1650 1900
+Wire Wire Line
+	1650 1900 1650 2050
+Connection ~ 1600 1550
+Wire Wire Line
+	1600 1550 1650 1550
+$Comp
+L Device:C_Small C3
+U 1 1 61B5DE6E
+P 3050 2150
+F 0 "C3" H 3142 2196 50  0000 L CNN
+F 1 "0.1uF" H 3142 2105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D6.0mm_P15.00mm_Horizontal" H 3050 2150 50  0001 C CNN
+F 3 "~" H 3050 2150 50  0001 C CNN
+	1    3050 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2300 3050 2250
+$Comp
+L power:GND #PWR010
+U 1 1 61B5DE76
+P 3050 2300
+F 0 "#PWR010" H 3050 2050 50  0001 C CNN
+F 1 "GND" H 3055 2127 50  0000 C CNN
+F 2 "" H 3050 2300 50  0001 C CNN
+F 3 "" H 3050 2300 50  0001 C CNN
+	1    3050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 61B5F6DE
+P 4600 2150
+F 0 "C4" H 4692 2196 50  0000 L CNN
+F 1 "0.1uF" H 4692 2105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D6.0mm_P15.00mm_Horizontal" H 4600 2150 50  0001 C CNN
+F 3 "~" H 4600 2150 50  0001 C CNN
+	1    4600 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 61B60FF5
+P 6150 2100
+F 0 "C6" H 6242 2146 50  0000 L CNN
+F 1 "0.1uF" H 6242 2055 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D6.0mm_P15.00mm_Horizontal" H 6150 2100 50  0001 C CNN
+F 3 "~" H 6150 2100 50  0001 C CNN
+	1    6150 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2250 6150 2200
+$Comp
+L Device:C_Small C7
+U 1 1 61B629E3
+P 7600 2150
+F 0 "C7" H 7692 2196 50  0000 L CNN
+F 1 "0.1uF" H 7692 2105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D6.0mm_P15.00mm_Horizontal" H 7600 2150 50  0001 C CNN
+F 3 "~" H 7600 2150 50  0001 C CNN
+	1    7600 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2300 7600 2250
+$Comp
+L power:GND #PWR019
+U 1 1 61B629EB
+P 7600 2300
+F 0 "#PWR019" H 7600 2050 50  0001 C CNN
+F 1 "GND" H 7605 2127 50  0000 C CNN
+F 2 "" H 7600 2300 50  0001 C CNN
+F 3 "" H 7600 2300 50  0001 C CNN
+	1    7600 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1550 3050 2050
+Connection ~ 3050 1550
+Wire Wire Line
+	3050 1550 2950 1550
+Wire Wire Line
+	4600 1550 4600 2050
+Connection ~ 4600 1550
+Wire Wire Line
+	4600 1550 4500 1550
+Wire Wire Line
+	6150 1550 6150 2000
+Connection ~ 6150 1550
+Wire Wire Line
+	6150 1550 6050 1550
+Wire Wire Line
+	7600 1550 7600 2050
+Connection ~ 7600 1550
+Wire Wire Line
+	7600 1550 7500 1550
+$Comp
+L Device:R R1
+U 1 1 61B730A8
+P 800 1850
+F 0 "R1" H 870 1896 50  0000 L CNN
+F 1 "10k" H 870 1805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 730 1850 50  0001 C CNN
+F 3 "~" H 800 1850 50  0001 C CNN
+	1    800  1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  1700 800  1650
+Connection ~ 800  1650
+Wire Wire Line
+	800  1650 850  1650
+Wire Wire Line
+	800  2100 800  2000
+$Comp
+L power:GND #PWR01
+U 1 1 61B78CA8
+P 800 2100
+F 0 "#PWR01" H 800 1850 50  0001 C CNN
+F 1 "GND" H 805 1927 50  0000 C CNN
+F 2 "" H 800 2100 50  0001 C CNN
+F 3 "" H 800 2100 50  0001 C CNN
+	1    800  2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 61B7ADA3
+P 4800 4250
+F 0 "C5" H 4892 4296 50  0000 L CNN
+F 1 "0,47uF" H 4892 4205 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D6.0mm_P15.00mm_Horizontal" H 4800 4250 50  0001 C CNN
+F 3 "~" H 4800 4250 50  0001 C CNN
+	1    4800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3900 4800 4150
+Wire Wire Line
+	4800 4400 4800 4350
+Wire Wire Line
+	5350 3900 4800 3900
+$Comp
+L power:GND #PWR013
+U 1 1 61B83248
+P 4800 4400
+F 0 "#PWR013" H 4800 4150 50  0001 C CNN
+F 1 "GND" H 4805 4227 50  0000 C CNN
+F 2 "" H 4800 4400 50  0001 C CNN
+F 3 "" H 4800 4400 50  0001 C CNN
+	1    4800 4400
+	1    0    0    -1  
+$EndComp
+Text Label 4900 3900 0    50   ~ 0
+P5V
+$Comp
+L Device:R R5
+U 1 1 61B83450
+P 5250 4200
+F 0 "R5" H 5320 4246 50  0000 L CNN
+F 1 "10k" H 5320 4155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5180 4200 50  0001 C CNN
+F 3 "~" H 5250 4200 50  0001 C CNN
+	1    5250 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4400 5250 4350
+$Comp
+L power:GND #PWR014
+U 1 1 61B83458
+P 5250 4400
+F 0 "#PWR014" H 5250 4150 50  0001 C CNN
+F 1 "GND" H 5255 4227 50  0000 C CNN
+F 2 "" H 5250 4400 50  0001 C CNN
+F 3 "" H 5250 4400 50  0001 C CNN
+	1    5250 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4000 5250 4000
+Wire Wire Line
+	5250 4000 5250 4050
+$Comp
+L Device:R R4
+U 1 1 61B87BAF
+P 5250 3600
+F 0 "R4" H 5320 3646 50  0000 L CNN
+F 1 "NC(10k)" H 5320 3555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5180 3600 50  0001 C CNN
+F 3 "~" H 5250 3600 50  0001 C CNN
+	1    5250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3750 5250 4000
+Connection ~ 5250 4000
+Wire Wire Line
+	5250 3450 5250 3350
+Wire Wire Line
+	5250 3350 5150 3350
+Text Label 5150 3350 0    50   ~ 0
+P5V
+$Comp
+L power:GND #PWR017
+U 1 1 61B8EAFC
+P 6550 3950
+F 0 "#PWR017" H 6550 3700 50  0001 C CNN
+F 1 "GND" H 6555 3777 50  0000 C CNN
+F 2 "" H 6550 3950 50  0001 C CNN
+F 3 "" H 6550 3950 50  0001 C CNN
+	1    6550 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3950 6550 3900
+Wire Wire Line
+	6550 3900 6450 3900
+$Comp
+L power:GND #PWR0101
+U 1 1 61B26087
+P 4600 2400
+F 0 "#PWR0101" H 4600 2150 50  0001 C CNN
+F 1 "GND" H 4605 2227 50  0000 C CNN
+F 2 "" H 4600 2400 50  0001 C CNN
+F 3 "" H 4600 2400 50  0001 C CNN
+	1    4600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2400 4600 2250
+$Comp
+L power:GND #PWR0102
+U 1 1 61B2B059
+P 6150 2250
+F 0 "#PWR0102" H 6150 2000 50  0001 C CNN
+F 1 "GND" H 6155 2077 50  0000 C CNN
+F 2 "" H 6150 2250 50  0001 C CNN
+F 3 "" H 6150 2250 50  0001 C CNN
+	1    6150 2250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
