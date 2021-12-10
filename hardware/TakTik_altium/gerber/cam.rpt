@@ -1,0 +1,20 @@
+CAMtasticDXP Drill Report
+Serial Number:0000-00-00000
+Drill File: C:\Users\lause\OneDrive\Documents\Avec_Nicolas_on_fait_des_trucs_sympa\tac-tik\hardware\TakTik_altium\gerber\cam.drl
+Format: 2.3
+Units: Metric (mm.)
+Step & Repeat Codes Used: NO
+
+
+TOOL		SIZE		COUNT
+====		======		=====
+
+ 1 		1.6032		14
+ 2 		1.5532		7
+ 3 		1.5532		9
+ 4 		1.7332		30
+ 5 		1.5532		2
+ 6 		2.1832		1
+ 7 		2.1832		2
+ 8 		1.4782		1
+ 9 		1.4782		1
